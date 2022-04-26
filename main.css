@@ -1,0 +1,107 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  line-height: 1.6rem;
+}
+border {
+}
+header {
+  background-color: hsl(175, 50%, 24%);
+  height: 200px;
+}
+.white-space {
+  height: 350px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h3 {
+  margin: 0.2rem;
+}
+footer {
+  background-color: hsl(175, 50%, 24%);
+  display: flex;
+  justify-content: center; /* för att hålla allt centreat vid stora upplösningar */
+  height: 60px;
+  min-height: 150px;
+  border-top: 2px solid hsl(175, 50%, 74%); /* välja värg */
+}
+
+nav {
+  color: white;
+  display: flex;
+  flex-grow: 1;
+  padding: 2rem;
+  margin: 1rem;
+  align-items: center;
+  min-width: 340px;
+  max-width: 1200px;
+}
+.copyright {
+  /* marginal för logo*/
+  margin: 0.2rem;
+}
+.container-footer-links {
+  display: flex;
+  margin-left: auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+  margin: 0.5rem;
+}
+.footer-link {
+  color: white;
+  margin-left: 1rem;
+}
+
+.nexer-group-company-card-container {
+  background-color: hsl(175, 50%, 24%);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-company {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid hsl(175, 50%, 74%);
+  color: white;
+  max-width: 280px;
+  min-width: 180px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  /* Aimera? */
+  .container-footer-links {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  nav {
+    justify-content: space-around;
+  }
+  .coyright {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .container-footer-links {
+    display: none;
+  }
+  nav {
+    justify-content: center;
+  }
+  .card-link-text {
+    display: none;
+  }
+}
