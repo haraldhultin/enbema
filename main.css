@@ -1,12 +1,41 @@
+:root {
+  --color-primary: #1f5c57;
+  --color-complementary: #5c2d1f;
+
+  --clr-candidate-1: #1f5c57; /* primary */
+  --clr-candidate-2: #3f7671; /* monocromatic */
+  --clr-candidate-3: #5c2d1f; /* complementary */
+  --clr-candidate-4: #1f245c; /* analogous 1 */
+  --clr-candidate-5: #215c1f; /* analogous 2 */
+  --clr-candidate-6: #5c3c1f; /* split complementary 1 */
+  --clr-candidate-7: #5c1f21; /* split complementary 2 */
+  --clr-candidate-8: #5c1f21; /* triadic 1 */
+  --clr-candidate-9: #5c1f40; /* triadic 2 */
+  --clr-candidate-10: #5c2d1f; /* tetradic 1 */
+  --clr-candidate-11: #5c4c1f; /* tetradic 2 */
+  --clr-candidate-12: #3b1f5c; /* tetradic 3 */
+
+  /* --ff-sans-serif: Arial, Helvetica, sans-serif;
+  --ff-serif: 'Times New Roman', Times, serif;
+  --fs-BIGGER: 47px;
+  --fs-big: 23px;
+  --fs-normal: 18px;
+  --fs-small: 14px;
+
+  --space-large: 2.5rem;
+  --space-medium: 1.25rem;
+  --space-small: 0.625rem; */
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
-  box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
+  padding: 0;
+  font-family: Montserrat;
   line-height: 1.6rem;
+  min-width: 340px;
 }
-border {
-}
+
 header {
   background-color: hsl(175, 50%, 24%);
   height: 200px;
@@ -29,6 +58,7 @@ footer {
   height: 60px;
   min-height: 150px;
   border-top: 2px solid hsl(175, 50%, 74%); /* välja värg */
+  padding: 2rem;
 }
 
 nav {
@@ -41,30 +71,38 @@ nav {
   min-width: 340px;
   max-width: 1200px;
 }
-.copyright {
-  /* marginal för logo*/
-  margin: 0.2rem;
+
+nav * {
+  margin: 0.5rem;
 }
-.container-footer-links {
-  display: flex;
-  margin-left: auto;
-}
+
 a {
   text-decoration: none;
   color: white;
-  margin: 0.5rem;
+}
+a:hover {
+  color: hsl(0, 0%, 80%);
+}
+.footer-link-list {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
 }
 .footer-link {
   color: white;
-  margin-left: 1rem;
 }
-
-.nexer-group-company-card-container {
+.nexer-group-cards {
   background-color: hsl(175, 50%, 24%);
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.nexer-group-company-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
 }
 .card-company {
   display: flex;
@@ -76,32 +114,102 @@ a {
   border-radius: 5px;
   border: 1px solid hsl(175, 50%, 74%);
   color: white;
-  max-width: 280px;
-  min-width: 180px;
   text-align: center;
+  /* width: 100%; */
+  /* max-width: 200px; */
+  /* min-width: 180px;  */
+  /* försöka dela 2:2 vid breakpoint */
+  /* 
+  flex-basis: calc(20% -12px); */
+  flex: 15%;
+}
+
+.contact-us-container {
+  background-color: hsl(175, 50%, 24%);
+  color: white;
+  font-family: 'Open Sans Condensed';
+
+  font-weight: 700;
+  padding: 4em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* min-width: 340px; */
+  /* border-bottom: 1px solid hsl(175, 50%, 74%); */ /* border? */
+}
+
+.question-contact-us {
+  font-size: 40px;
+}
+.title-contact-us {
+  /* font-size: 70px; */
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.contact-us-button {
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  flex-shrink: 1;
+  background-color: hsl(175, 50%, 44%);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  /* border-radius: 5px; */
+  cursor: pointer;
+}
+.contact-us-button:hover {
+  color: hsl(0, 0%, 90%);
+  background-color: hsl(175, 50%, 34%);
 }
 
 @media (max-width: 900px) {
   /* Aimera? */
-  .container-footer-links {
+  .footer-link-list {
     flex-direction: column;
     margin-left: 0;
   }
   nav {
     justify-content: space-around;
   }
+}
+@media (max-width: 400px) {
+  nav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 1200px) {
+  .card-company {
+    flex: 40%;
+  }
+  .nexer-group-company-card-container {
+    max-width: 660px;
+  }
+  .card-link-text {
+    display: none;
+  }
   .coyright {
     display: none;
   }
 }
-@media (max-width: 400px) {
-  .container-footer-links {
-    display: none;
+
+@media (max-width: 660px) {
+  .card-company {
+    flex: 90%;
   }
-  nav {
-    justify-content: center;
+  .nexer-group-company-card-container {
+    max-width: 400px;
   }
-  .card-link-text {
+  .footer-link-list {
     display: none;
   }
 }
