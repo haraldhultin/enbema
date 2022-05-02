@@ -28,19 +28,13 @@
 }
 *{
   box-sizing: border-box;
-  font-family: Montserrat;
-
 }
 body {
+  font-family: Montserrat;
   margin: 0;
   padding: 0;
   line-height: 1.6rem;
   min-width: 340px;
-}
-
-header {
-  background-color: hsl(175, 50%, 24%);
-  height: 200px;
 }
 
 img {
@@ -48,9 +42,7 @@ img {
   height: auto;
 }
 
-h3 {
-  margin: 0.2rem;
-}
+
 footer {
   background-color: hsl(175, 50%, 24%);
   display: flex;
@@ -61,7 +53,7 @@ footer {
   padding: 2rem;
 }
 
-nav {
+.nav-footer {
   color: white;
   display: flex;
   flex-grow: 1;
@@ -72,11 +64,12 @@ nav {
   max-width: 1200px;
 }
 
-nav * {
+/* make space between elements in footer */
+.nav-footer * {
   margin: 0.5rem;
 }
 
-a {
+.nav-footer a {
   text-decoration: none;
   color: white;
 }
@@ -114,7 +107,7 @@ a:hover {
   border-radius: 5px;
   border: 1px solid hsl(175, 50%, 74%);
   color: white;
-  text-align: center;
+  text-align: justify;
 
   /* grid?*/
   /* flex: 1 1 calc(20% - 12px);  */
@@ -138,7 +131,7 @@ a:hover {
 
   font-weight: 700;
   padding: 4em;
-  line-height: normal;
+  line-height: normal;  
 
   display: flex;
   flex-direction: column;
@@ -188,12 +181,12 @@ a:hover {
     flex-wrap: wrap; /* flytta upp? */
     width: 265px;  /* <-- lös snyggare */
   }
-  nav {
+  .nav-footer {
     justify-content: space-around;
   }
 }
 @media (max-width: 400px) {
-  nav {
+  .nav-footer {
     justify-content: center;
   }
 }
