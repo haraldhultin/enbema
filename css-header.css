@@ -1,8 +1,8 @@
 
 .header {
     background-color: hsl(175, 50%, 24%);
-    height: 300px;
-    padding-bottom: 10px;
+    height: 226px;
+    padding-bottom: 0px;
 }
 
 .header::after {
