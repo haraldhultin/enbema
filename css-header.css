@@ -20,7 +20,7 @@
   font-size: 3rem;
   font-weight: 700;
   line-height: 0.7rem;
-  font-family: 'montserrat';
+  font-family: 'Montserrat';
 }
 
 .header-subtitle {
@@ -40,13 +40,11 @@
 }
 .container-header {
   display: flex;
-  /* width: 75%; */
   margin: 1rem;
   padding-top: 0;
   height: 50px;
   /* max-width: 1200px; */
   justify-content: space-between;
-
   /* justify-content: center; */
 }
 
