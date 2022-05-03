@@ -112,6 +112,10 @@ a:hover {
   /* flex: 1 1 calc(20% - 12px);  */
   flex: 10%; /* <-- lös snyggare */
 }
+.card-company {
+  text-decoration: none;
+  color: white;
+}
 .card-company-text {
   margin-top: 1rem;
 }
