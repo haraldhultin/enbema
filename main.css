@@ -50,7 +50,6 @@ footer {
   min-height: 150px;
   border-top: 2px solid hsl(175, 50%, 74%); /* TODO: välj värg */
   padding: 2rem;
-  /* margin-top: 2rem; */
 }
 
 .nav-footer {
@@ -69,12 +68,12 @@ footer {
   margin: 0.5rem;
 }
 
-.nav-footer a {
+.nav-footer a { /* redundant? */
   text-decoration: none;
   color: white;
 }
 a:hover {
-  color: hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 80%); /* TODO: välj värg */
 }
 .footer-link-list {
   display: flex;
@@ -87,7 +86,6 @@ a:hover {
 }
 .nexer-group-cards {
   background-color: hsl(175, 50%, 24%);
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
