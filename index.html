@@ -5,33 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="./fonts/web-fonts.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- css -->
     <link rel="stylesheet" href="./main.css" type="text/css">
     <link rel="stylesheet" href="css-header.css" type="text/css">
     <link rel="stylesheet" href="css-slider.css" type="text/css">
 
-    <link rel='stylesheet'
-        href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,400,600,700%7CRoboto+Condensed:400,600,700%7CRoboto:400,400italic,600,700%7COpen+Sans:400,600,700'
-        type='text/css' media='all' />
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <title>Embema</title>
+
+    <title>ENBEMA</title>
 
 </head>
 
 <body>
     <header class="header">
         <section class="nav-header">
+
+            <!-- this div .header-logo helps to align the logo to the left -->
+
+
             <div class="header-logo">
                 <div class="header-title">
                     ENBEMA
                 </div>
                 <div class="header-subtitle">
-                    <div class="subtitle">En del av <span class="subtitle-noxor-group">Noxor Group</span></div>
+
+                    En del av <img class="header-noxor-logo" src="./Noxor-logo-horizontal.png" alt="Noxor Group logo">
                 </div>
             </div>
             <ul class="header-link-list">
-                <li><a href="http://127.0.0.1:5501/index.html">HEM</a></li>
-                <li><a href="http://127.0.0.1:5501/produkter.html/">PRODUKTER</a>
+                <li><a href="./index.html">HEM</a></li>
+                <li><a href="./produkter.html/">PRODUKTER</a>
+
                     <ul class="submenu">
                         <li><a href="#">CELLMATARE</a></li>
                         <li><a href="#">TRANSPORT</a></li>
@@ -50,6 +61,14 @@
 
 
     <section class="slide-wrapper">
+        <div class="slidetext">
+            <h2>VÅRA PRODUKTER</h2>
+            <p>Enbema levererar enstaka maskiner eller kompletta system för bulkgodshantering.
+                Våra kunder är t.ex. energiverk, cellulosaindustrin, cementindustrin, kemisk industri.
+            </p>
+            <a href="./produkter.html">
+                <button class="button1" style="vertical-align:middle"><span>LÄS MER</span></button>
+            </a>
 
         <div class="slidetext">
             <h2>VÅRA PRODUKTER</h2>
@@ -61,7 +80,6 @@
         </div>
 
         <div class="card">
-
             <div class="card_part card_part-one">
             </div>
 
@@ -77,9 +95,7 @@
             <!-- Photo 4 -->
             <div class="card_part card_four">
             </div>
-
         </div>
-
     </section>
 
     <section class="cardwrapper1">
@@ -88,31 +104,27 @@
         </div>
         <div class="slidetext1">
             <h2>SERVICE & RESERVDELAR</h2>
-
             <p>Vi arbetar med slit- & reservdelar, underhåll, service och modernisering av
                 materialhanteringsanläggningar.
             </p>
             <button class="button2" style="vertical-align:middle"><span>LÄS MER</span></button>
         </div>
 
-
     </section>
-
     <section class="cardwrapper2">
 
         <div class="slidetext2">
             <h2>KOMPONENTER</h2>
-
-            <p>Vi tillhandahåller komponenter för ert behov, både egentillverkade och från underleverantörer med kort
-                varsel.
-            </p><button class="button3" style="vertical-align:middle"><span>LÄS MER</span></button>
+            <p>
+              Vi tillhandahåller komponenter för ert behov, både egentillverkade och från 
+              underleverantörer med kort              varsel.
+            </p>
+      <button class="button3" style="vertical-align:middle"><span>LÄS MER</span></button>
 
         </div>
         <div class="card3">
             <div class="card4"></div>
         </div>
-
-
     </section>
 
 
@@ -148,9 +160,7 @@
             <figure class="gallery_item8">
                 <img src="servicetekniker.png" class="gallery__img" alt="Image 8">
             </figure>
-
         </div>
-
     </section>
 
 
@@ -219,8 +229,8 @@
                 <img src="./logo-transparent.png" width="200" />
                 <!-- fixa trans bakgrund -h  -->
             </a>
-            <p class="coyright">© 2022 Noxor AB</p>
 
+            <p class="copyright">© 2022 Noxor AB</p>
             <ul class="footer-link-list">
                 <li><a class="footer-link" href="https://noxor.se/foretaget/"> Företaget </a></li>
                 <li><a class="footer-link" href="https://noxor.se/produkter/"> Produkter </a></li>
