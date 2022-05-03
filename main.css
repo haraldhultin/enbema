@@ -26,42 +26,33 @@
   --space-medium: 1.25rem;
   --space-small: 0.625rem; */
 }
-
-body {
+* {
   box-sizing: border-box;
+}
+body {
+  font-family: Montserrat;
   margin: 0;
   padding: 0;
-  font-family: Montserrat;
-  line-height: 1.6rem;
-  min-width: 340px;
+  line-height: 1.6rem; /* ? */
+  min-width: 340px; /* ? */
 }
 
-header {
-  background-color: hsl(175, 50%, 24%);
-  height: 200px;
-}
-.white-space {
-  height: 350px;
-}
 img {
   max-width: 100%;
   height: auto;
 }
 
-h3 {
-  margin: 0.2rem;
-}
 footer {
   background-color: hsl(175, 50%, 24%);
   display: flex;
   justify-content: center; /* för att hålla allt centreat vid stora upplösningar */
   height: 60px;
   min-height: 150px;
-  border-top: 2px solid hsl(175, 50%, 74%); /* välja värg */
+  border-top: 2px solid hsl(175, 50%, 74%); /* TODO: välj värg */
   padding: 2rem;
 }
 
-nav {
+.nav-footer {
   color: white;
   display: flex;
   flex-grow: 1;
@@ -72,11 +63,12 @@ nav {
   max-width: 1200px;
 }
 
-nav * {
+/* make space between elements in footer */
+.nav-footer * {
   margin: 0.5rem;
 }
 
-a {
+.nav-footer a {
   text-decoration: none;
   color: white;
 }
@@ -86,6 +78,7 @@ a:hover {
 .footer-link-list {
   display: flex;
   margin-left: auto;
+  padding: 0;
   list-style: none;
 }
 .footer-link {
@@ -102,26 +95,32 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1200px; /* 100%? */
 }
 .card-company {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin: 1rem;
   padding: 1rem;
   border-radius: 5px;
   border: 1px solid hsl(175, 50%, 74%);
   color: white;
-  text-align: center;
-  /* width: 100%; */
-  /* max-width: 200px; */
-  /* min-width: 180px;  */
-  /* försöka dela 2:2 vid breakpoint */
-  /* 
-  flex-basis: calc(20% -12px); */
-  flex: 15%;
+  text-align: justify;
+
+  /* grid?*/
+  /* flex: 1 1 calc(20% - 12px);  */
+  flex: 10%; /* <-- lös snyggare */
+}
+.card-company-text {
+  margin-top: 1rem;
+}
+.card-link-text {
+  display: none;
+}
+.card-company:hover {
+  background-color: hsl(175, 50%, 29%);
+  cursor: pointer;
 }
 
 .contact-us-container {
@@ -131,6 +130,7 @@ a:hover {
 
   font-weight: 700;
   padding: 4em;
+  line-height: normal;
 
   display: flex;
   flex-direction: column;
@@ -142,11 +142,16 @@ a:hover {
 }
 
 .question-contact-us {
-  font-size: 40px;
+  font-family: 'Open Sans Condensed';
+
+  text-align: center;
+  font-size: 3rem;
 }
 .title-contact-us {
-  /* font-size: 70px; */
-  font-size: 3rem;
+  font-family: 'Open Sans Condensed';
+
+  text-align: center;
+  font-size: 4rem;
   margin: 1rem;
 }
 
@@ -171,20 +176,17 @@ a:hover {
 @media (max-width: 900px) {
   /* Aimera? */
   .footer-link-list {
-    flex-direction: column;
-    margin-left: 0;
+    flex-wrap: wrap; /* flytta upp? */
+    width: 265px; /* <-- lös snyggare */
   }
-  nav {
+  .nav-footer {
     justify-content: space-around;
   }
 }
 @media (max-width: 400px) {
-  nav {
+  .nav-footer {
     justify-content: center;
   }
-}
-
-@media (max-width: 1000px) {
 }
 
 @media (max-width: 1200px) {
