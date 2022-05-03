@@ -26,22 +26,21 @@
   --space-medium: 1.25rem;
   --space-small: 0.625rem; */
 }
-*{
+* {
   box-sizing: border-box;
 }
 body {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6rem;
-  min-width: 340px;
+  line-height: 1.6rem; /* ? */
+  min-width: 340px; /* ? */
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
-
 
 footer {
   background-color: hsl(175, 50%, 24%);
@@ -51,6 +50,7 @@ footer {
   min-height: 150px;
   border-top: 2px solid hsl(175, 50%, 74%); /* TODO: välj värg */
   padding: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .nav-footer {
@@ -61,7 +61,7 @@ footer {
   margin: 1rem;
   align-items: center;
   min-width: 340px;
-  max-width: 1200px;
+  max-width: 1440px;
 }
 
 /* make space between elements in footer */
@@ -91,12 +91,14 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 6rem;
 }
 .nexer-group-company-card-container {
   display: flex;
   flex-wrap: wrap;
+  flex: 1;
   justify-content: center;
-  max-width: 1200px; /* 100%? */
+  max-width: 1440px; /* 100%? */
 }
 .card-company {
   display: flex;
@@ -104,16 +106,23 @@ a:hover {
   align-items: center;
   margin: 1rem;
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 0.5em;
   border: 1px solid hsl(175, 50%, 74%);
   color: white;
   text-align: justify;
+  min-height: 350px;
 
   /* grid?*/
   /* flex: 1 1 calc(20% - 12px);  */
-  flex: 10% /* <-- lös snyggare */ 
+  flex: 10%; /* <-- lös snyggare */
+
+  text-decoration: none;
+  color: white;
 }
-.card-company-text{
+.card-company img {
+  border-radius: 0.5em;
+}
+.card-company-text {
   margin-top: 1rem;
 }
 .card-link-text {
@@ -122,6 +131,12 @@ a:hover {
 .card-company:hover {
   background-color: hsl(175, 50%, 29%);
   cursor: pointer;
+  box-shadow: 0 0 0.5rem 0 hsl(175, 50%, 29%);
+}
+.copyright {
+  font-size: 0.7rem;
+  font-family: Helvetica; /*?*/
+  color: hsl(0, 0%, 70%);
 }
 
 .contact-us-container {
@@ -131,12 +146,14 @@ a:hover {
 
   font-weight: 700;
   padding: 4em;
-  line-height: normal;  
+  line-height: normal;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  height: 500px;
 
   /* min-width: 340px; */
   /* border-bottom: 1px solid hsl(175, 50%, 74%); */ /* border? */
@@ -144,53 +161,38 @@ a:hover {
 
 .question-contact-us {
   font-family: 'Open Sans Condensed';
-
+  color: hsl(175, 50%, 74%);
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  line-height: 1.2rem;
+  margin: 0rem;
 }
 .title-contact-us {
   font-family: 'Open Sans Condensed';
-
   text-align: center;
-  font-size: 4rem;
-  margin: 1rem;
+  font-size: 4.5rem;
+  margin: 0.8rem;
 }
 
 .contact-us-button {
   font-family: 'Open Sans Condensed';
   font-weight: 700;
-  flex-shrink: 1;
   background-color: hsl(175, 50%, 44%);
   border: none;
   color: white;
   font-size: 1.5rem;
-  padding: 1rem;
-  margin: 1rem;
-  /* border-radius: 5px; */
+  width: 400px;
+  padding: 0.8em 1em 0.8em 1em;
+  border-radius: 5px;
   cursor: pointer;
+  text-align: left;
 }
 .contact-us-button:hover {
   color: hsl(0, 0%, 90%);
   background-color: hsl(175, 50%, 34%);
 }
 
-@media (max-width: 900px) {
-  
-  /* Aimera? */
-  .footer-link-list {
-    flex-wrap: wrap; /* flytta upp? */
-    width: 265px;  /* <-- lös snyggare */
-  }
-  .nav-footer {
-    justify-content: space-around;
-  }
-}
-@media (max-width: 400px) {
-  .nav-footer {
-    justify-content: center;
-  }
-}
-
+/* media */
 @media (max-width: 1200px) {
   .card-company {
     flex: 40%;
@@ -201,19 +203,28 @@ a:hover {
   .card-link-text {
     display: none;
   }
-  .coyright {
+  .copyright {
     display: none;
   }
 }
-
+@media (max-width: 900px) {
+  /* Aimera? */
+  /* .footer-link-list { */
+  /* flex-wrap: wrap;  flytta upp?  */
+  /* width: 265px; <-- lös snyggare */
+  /* } */
+  .footer-link-list {
+    display: none;
+  }
+  .nav-footer {
+    justify-content: center;
+  }
+}
 @media (max-width: 660px) {
   .card-company {
     flex: 90%;
   }
   .nexer-group-company-card-container {
     max-width: 400px;
-  }
-  .footer-link-list {
-    display: none;
   }
 }
