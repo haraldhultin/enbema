@@ -80,7 +80,7 @@ margin-bottom: 25px;
 
 #info-content {
   font-size: 15px;
-  height: 200px;
+  height: 270px;
  
 }
 
@@ -121,6 +121,28 @@ margin-bottom: 25px;
 
 .img-slider img {
   height: 100%;
+}
+
+.Download {
+  display: flex;
+  padding-bottom: 0;
+
+}
+.DownloadHover {
+  font-family: 'Open Sans Condensed';
+  font-weight: 350;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.8em 1em 0.8em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.DownloadHover:hover {
+
+  color: hsl(175, 50%, 34%);
 }
 
 
