@@ -9,7 +9,7 @@
 :root {
   --primary-color: hsl(175, 50%, 24%);
   /* --background-color: hsl(175, 50%, 24%); */
-  --font: sans-serif;
+  --font: Montserrat, sans-serif;
 }
 
 * {
