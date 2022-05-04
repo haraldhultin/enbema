@@ -74,7 +74,7 @@ footer {
   text-decoration: none;
   color: white;
 }
-a:hover {
+footer a:hover {
   color: hsl(0, 0%, 80%); /* TODO: välj värg */
 }
 .footer-link-list {
