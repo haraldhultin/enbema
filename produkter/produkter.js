@@ -5,15 +5,15 @@ const imgSlider = document.getElementById('img-slider');
 imgSlider.addEventListener('click', event => {
 
     if (event.target === image1) {
-         headImage.setAttribute ("src","beredning-noxor.jpg");
+         headImage.setAttribute ("src","bandtransportorer1.jpg");
     }
 
     else if (event.target === image2) {
-      headImage.setAttribute ("src","cellmatare-noxor.jpg");
+      headImage.setAttribute ("src","..//Bandtransportör.jpg");
     }
 
     else {
-      headImage.setAttribute ("src","lagring-noxor.jpg");
+      headImage.setAttribute ("src","bandtransportör2.jpg");
     }
   
 });
