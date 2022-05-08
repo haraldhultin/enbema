@@ -63,6 +63,7 @@
 .nav-header li {
   display: inline-block;
   margin-right: 15px;
+  margin-left: 15px;
   padding-top: 30px;
   position: relative;
 }
@@ -70,8 +71,7 @@
 .nav-header a {
   color: rgb(25, 19, 19);
   text-decoration: none;
-  font: normal 100 18px / 21px 'Roboto Condensed', Helvetica, Arial, Verdana,
-    sans-serif;
+  font: normal 100 20px / 21px 'montserrat', sans-serif;
   display: inline-block;
   position: relative;
 }
@@ -97,11 +97,10 @@
 .submenu {
   position: absolute;
   visibility: visible;
-  z-index: 200;
+  z-index: 20;
   top: 100%;
   left: 100;
-  width: 150px;
-  opacity: 1;
+  width: 300%;
 }
 
 li {
@@ -128,7 +127,7 @@ ul li ul:hover {
   opacity: 1;
   display: block;
   left: 0p;
-  background-color: white;
+  background-color: hsla(0, 0%, 100% , 0.7);
   box-sizing: border-box;
 }
 
