@@ -6,9 +6,8 @@
   --color-primary-lighter-hover: var(--clr-candidate-27);
   --color-white: #fff;
   --color-complementary: #5c2d1f;
- 
-  --clr-noxor-blue: hsl(217, 50%, 24%); /*  */ 
 
+  --clr-noxor-blue: hsl(217, 50%, 24%); /*  */
 
   --clr-candidate-1: #1f5c57; /* primary */
   --clr-candidate-2: #3f7671; /* monocromatic */
@@ -22,21 +21,21 @@
   --clr-candidate-10: #5c2d1f; /* tetradic 1 */
   --clr-candidate-11: #5c4c1f; /* tetradic 2 */
   --clr-candidate-12: #3b1f5c; /* tetradic 3 */
-  --clr-candidate-13: #788AB7; /*  */
-  --clr-candidate-14: #334B49; /*  */
-  --clr-candidate-15: #1A857F; /*  */
+  --clr-candidate-13: #788ab7; /*  */
+  --clr-candidate-14: #334b49; /*  */
+  --clr-candidate-15: #1a857f; /*  */
   --clr-candidate-16: #894130; /*  */
-  --clr-candidate-17: #00759C; /*  */
-  --clr-candidate-18: #5A2530; /*  */
-  --clr-candidate-19: #52648F; /*  */
-  --clr-candidate-20: #006089; /* rätt nice */ 
-  --clr-candidate-21: #006B4A; /*  */ 
-  --clr-candidate-22: #454f43; /*  */ 
-  --clr-candidate-23: #114400; /*  */ 
-  --clr-candidate-24: hsl(99, 50%, 15%); /* industrigrön rätt nice  */ 
-  --clr-candidate-25: hsl(99, 50%, 20%); /* industrigrön rätt nice  */ 
-  --clr-candidate-26: hsl(99, 50%, 35%); /* industrigrön rätt nice  */ 
-  --clr-candidate-27: hsl(99, 50%, 25%); /* industrigrön rätt nice  */ 
+  --clr-candidate-17: #00759c; /*  */
+  --clr-candidate-18: #5a2530; /*  */
+  --clr-candidate-19: #52648f; /*  */
+  --clr-candidate-20: #006089; /* rätt nice */
+  --clr-candidate-21: #006b4a; /*  */
+  --clr-candidate-22: #454f43; /*  */
+  --clr-candidate-23: #114400; /*  */
+  --clr-candidate-24: hsl(99, 50%, 15%); /* industrigrön rätt nice  */
+  --clr-candidate-25: hsl(99, 50%, 20%); /* industrigrön rätt nice  */
+  --clr-candidate-26: hsl(99, 50%, 35%); /* industrigrön rätt nice  */
+  --clr-candidate-27: hsl(99, 50%, 25%); /* industrigrön rätt nice  */
 
   /* --ff-sans-serif: Arial, Helvetica, sans-serif;
   --ff-serif: 'Times New Roman', Times, serif;
@@ -55,7 +54,6 @@
 body {
   color: var(--color-primary-text);
 
-
   font-family: Montserrat, sans-serif;
   margin: 0;
   padding: 0;
@@ -70,7 +68,6 @@ img {
 
 footer {
   background-color: var(--color-primary);
-
 
   display: flex;
   justify-content: center; /* för att hålla allt centreat vid stora upplösningar */
@@ -116,11 +113,7 @@ footer a:hover {
   color: white;
 }
 .nexer-group-cards {
-
   background-color: var(--color-primary);
-
-
-  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -141,7 +134,8 @@ footer a:hover {
   padding: 1rem;
   border-radius: 0.5em;
   /* border: 1px solid hsl(175, 50%, 74%); */
-  border: 1px solid var(--color-primary-light); /* TODO: välj värg */
+  /* TODO: välj värg border */
+  /* border: 1px solid var(--color-primary-light);  */
   color: white;
   /* text-align: justify; */
   text-align: center;
@@ -162,14 +156,16 @@ footer a:hover {
   margin-top: 2rem;
 }
 .card-link-text {
+  /* fimpa? */
   display: none;
 }
 .card-company:hover {
   /* background-color: hsl(175, 50%, 29%); */
   background-color: var(--color-primary-light); /* TODO: välj värg */
   cursor: pointer;
-  box-shadow: 0 0 0.5rem 0 hsl(175, 50%, 29%);
+  box-shadow: 0 0 0.5rem 0 var(--color-primary-light); 
 }
+
 .copyright {
   font-size: 0.7rem;
 }
@@ -177,7 +173,6 @@ footer a:hover {
 .contact-us-container {
   background-color: var(--color-primary);
 
-;
   color: white;
   font-family: 'Open Sans Condensed';
 
