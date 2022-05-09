@@ -32,8 +32,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
 
-
-
   display: flex;
   flex-direction: column;
   /* background: var(--primary-color); */
