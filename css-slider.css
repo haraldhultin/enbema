@@ -3,23 +3,33 @@
 *::after { box-sizing: border-box; }
 
 .slide-wrapper {
-  background-color: rgb(218, 218, 230);
+  background-color: var(--color-primary);
+
+  /* background-color: rgb(218, 218, 230 */
   width: 100%;
-  height: 550px;
+  height: 566px;
   display: flex;
   align-items: center;
   justify-content: center;
-    
+  
 
 }
-
+.slide-wrapper h2 {
+  font-size: 3rem;
+}
 .slidetext {
+  
+  color: var(--color-white);
+  line-height: 1.4;
+  padding-right: 3rem;
+  font-size: larger;
+
   position: relative;
   
   align-items: center;
   width: 40%;
-  font-family: sans-serif;
-  padding-left: 5%;
+  font-family: Montserrat, sans-serif;
+
 }
 
 
@@ -27,8 +37,8 @@
 
 .card {
   position: relative;
-  width: 700px;
-  height: 500px;
+  width: 600px;
+  height: 420px;
   overflow: hidden;
   padding-left: 15%;
   
@@ -63,8 +73,10 @@
   width: 100%;
   height: 100%;
   
-  transform: translateX( 700px );
-  background-image: url("logo-transparent.png");
+  transform: translateX( 600px );
+  background-image: url("Enbema600-420.jpg");
+  background-size: contain;
+
   
   animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
 }
@@ -72,35 +84,44 @@
 
 .card_part.card_two {
   z-index: 6;
-  background-image: url("logo.png");
+  background-image: url("TvaElevatorer.jpg");
+  background-size: contain;
+
   animation-delay: 7s;
 }
 
 .card_part.card_three {
   z-index: 5;
-  background-image: url("skruvmatarepng.png");
+  background-image: url("skruvtransport600-420.jpg");
+  background-size: cover;
+  
   animation-delay: 14s;
 }
 
 .card_part.card_four {
   z-index: 4;
-  background-image: url("logo.png");
+  background-image: url("spjäll700-500jpg.jpg");
   animation-delay: 21s;
+  background-size: contain;
+
 }
 
 
 @keyframes opaqTransition {
   3% { transform: translateX( 0 ); }
   25% { transform: translateX( 0 ); }
-  28% { transform: translateX( -700px ); }
-  100% { transform: translateX( -700px ); }
+  28% { transform: translateX( -600px ); }
+  100% { transform: translateX( -600px ); }
 }
 
 
 
 
 .cardwrapper1 {
-  background-color: rgb(201, 202, 222);
+  background-color: var(--color-white);
+
+
+  /* background-color: rgb(201, 202, 222); */
   width: 100%;
   height: 400px;
   display: flex;
@@ -109,9 +130,11 @@
   }
 
   .slidetext1 {
+
     position: relative;
     width: 50%;
-    font-family: sans-serif;
+    font-family: Montserrat, sans-serif;
+
     padding-left: 15%;
   }
 
@@ -134,12 +157,16 @@
     
     
     background-image: url("servicetekniker.png");
+    background-size: cover;
   }
 
   
  
 .cardwrapper2 {
-  background-color: rgb(218, 218, 230);
+  /* background-color: var(--color-primary); */
+
+
+  /* background-color: rgb(218, 218, 230); */
   width: 100%;
   height: 400px;
   display: flex;
@@ -150,8 +177,8 @@
   .slidetext2 {
     position: relative;
     width: 50%;
-    font-family: sans-serif;
-    padding-right: 15%;
+  font-family: Montserrat, sans-serif;
+  padding-right: 15%;
   }
 
   .card3 {
@@ -172,12 +199,15 @@
    
     
     background-image: url("komponenter.png");
+    background-size: cover;
+
   }
 
   .button1 {
     display: inline-block;
     border-radius: 2px;
-    background-color: hsl(175, 50%, 24%);
+    /* background-color: hsl(175, 50%, 24%); */
+    background-color: var(--color-primary-lighter-hover);
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -217,7 +247,8 @@
   .button2 {
     display: inline-block;
     border-radius: 2px;
-    background-color: hsl(175, 50%, 24%);
+    background-color: var(--color-primary-lighter-hover);
+
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -257,7 +288,8 @@
   .button3 {
     display: inline-block;
     border-radius: 2px;
-    background-color: hsl(175, 50%, 24%);
+    background-color: var(--color-primary-lighter-hover);
+
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -295,7 +327,9 @@
   }
 
   .reference {
-    background-color: rgb(201, 202, 222);
+    background-color: var(--color-white);
+
+    /* background-color: rgb(201, 202, 222); */
   }
 
   .referenceGalleri {
@@ -318,8 +352,9 @@
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: blue;
+  font-family: Montserrat, sans-serif;
+
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   font-size: 18px;
  
   }

@@ -1,10 +1,11 @@
 .titleWrapper-historia {
+  margin-top: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: hsl(175, 50%, 24%);
   padding-top: 5px;
   padding-bottom: 30px;
+  color: black;
 }
 :root {
   --primary-color: hsl(175, 50%, 24%);
@@ -24,14 +25,22 @@ body {
 }
 
 .timelineHistory {
+  height: 100%;
+  background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(historiaImage.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: cover;
+
   display: flex;
   flex-direction: column;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
   margin: 20px auto;
   padding: 20px;
   align-items: center;
   margin: 0;
 }
+
 
 .historyWrapper {
   display: flex;

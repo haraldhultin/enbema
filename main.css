@@ -1,6 +1,13 @@
 :root {
-  --color-primary: #1f5c57;
+  --color-primary: var(--clr-candidate-24);
+  --color-primary-text: var(--clr-candidate-25);
+  --color-primary-light: var(--clr-candidate-25);
+  --color-primary-lighter: var(--clr-candidate-26);
+  --color-primary-lighter-hover: var(--clr-candidate-27);
+  --color-white: #fff;
   --color-complementary: #5c2d1f;
+
+  --clr-noxor-blue: hsl(217, 50%, 24%); /*  */
 
   --clr-candidate-1: #1f5c57; /* primary */
   --clr-candidate-2: #3f7671; /* monocromatic */
@@ -14,6 +21,21 @@
   --clr-candidate-10: #5c2d1f; /* tetradic 1 */
   --clr-candidate-11: #5c4c1f; /* tetradic 2 */
   --clr-candidate-12: #3b1f5c; /* tetradic 3 */
+  --clr-candidate-13: #788ab7; /*  */
+  --clr-candidate-14: #334b49; /*  */
+  --clr-candidate-15: #1a857f; /*  */
+  --clr-candidate-16: #894130; /*  */
+  --clr-candidate-17: #00759c; /*  */
+  --clr-candidate-18: #5a2530; /*  */
+  --clr-candidate-19: #52648f; /*  */
+  --clr-candidate-20: #006089; /* rätt nice */
+  --clr-candidate-21: #006b4a; /*  */
+  --clr-candidate-22: #454f43; /*  */
+  --clr-candidate-23: #114400; /*  */
+  --clr-candidate-24: hsl(99, 50%, 15%); /* industrigrön rätt nice  */
+  --clr-candidate-25: hsl(99, 50%, 20%); /* industrigrön rätt nice  */
+  --clr-candidate-26: hsl(99, 50%, 35%); /* industrigrön rätt nice  */
+  --clr-candidate-27: hsl(99, 50%, 25%); /* industrigrön rätt nice  */
 
   /* --ff-sans-serif: Arial, Helvetica, sans-serif;
   --ff-serif: 'Times New Roman', Times, serif;
@@ -30,6 +52,8 @@
   box-sizing: border-box;
 }
 body {
+  color: var(--color-primary-text);
+
   font-family: Montserrat, sans-serif;
   margin: 0;
   padding: 0;
@@ -43,12 +67,14 @@ img {
 }
 
 footer {
-  background-color: hsl(175, 50%, 24%);
+  background-color: var(--color-primary);
+
   display: flex;
   justify-content: center; /* för att hålla allt centreat vid stora upplösningar */
   height: 60px;
   min-height: 150px;
-  border-top: 2px solid hsl(175, 50%, 74%); /* TODO: välj värg */
+  /* border-top: 2px solid hsl(175, 50%, 74%);  */
+  border-top: 2px solid var(--color-primary-light); /* TODO: välj värg */
   padding: 2rem;
 }
 
@@ -87,7 +113,7 @@ footer a:hover {
   color: white;
 }
 .nexer-group-cards {
-  background-color: hsl(175, 50%, 24%);
+  background-color: var(--color-primary);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -107,9 +133,12 @@ footer a:hover {
   margin: 1rem;
   padding: 1rem;
   border-radius: 0.5em;
-  border: 1px solid hsl(175, 50%, 74%);
+  /* border: 1px solid hsl(175, 50%, 74%); */
+  /* TODO: välj värg border */
+  /* border: 1px solid var(--color-primary-light);  */
   color: white;
-  text-align: justify;
+  /* text-align: justify; */
+  text-align: center;
   min-height: 350px;
 
   /* grid?*/
@@ -124,24 +153,26 @@ footer a:hover {
 }
 
 .card-company-text {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .card-link-text {
+  /* fimpa? */
   display: none;
 }
 .card-company:hover {
-  background-color: hsl(175, 50%, 29%);
+  /* background-color: hsl(175, 50%, 29%); */
+  background-color: var(--color-primary-light); /* TODO: välj värg */
   cursor: pointer;
-  box-shadow: 0 0 0.5rem 0 hsl(175, 50%, 29%);
+  box-shadow: 0 0 0.5rem 0 var(--color-primary-light); 
 }
+
 .copyright {
   font-size: 0.7rem;
-  font-family: Helvetica; /*?*/
-  color: hsl(0, 0%, 70%);
 }
 
 .contact-us-container {
-  background-color: hsl(175, 50%, 24%);
+  background-color: var(--color-primary);
+
   color: white;
   font-family: 'Open Sans Condensed';
 
@@ -162,7 +193,8 @@ footer a:hover {
 
 .question-contact-us {
   font-family: 'Open Sans Condensed';
-  color: hsl(175, 50%, 74%);
+  /* color: hsl(175, 50%, 74%); */
+  color: var(--color-white); /* TODO: välj värg */
   text-align: center;
   font-size: 2.5rem;
   line-height: 1.2rem;
@@ -178,7 +210,7 @@ footer a:hover {
 .contact-us-button {
   font-family: 'Open Sans Condensed';
   font-weight: 700;
-  background-color: hsl(175, 50%, 44%);
+  background-color: var(--color-primary-lighter); /* TODO: välj värg */
   border: none;
   color: white;
   font-size: 1.5rem;
@@ -190,7 +222,7 @@ footer a:hover {
 }
 .contact-us-button:hover {
   color: hsl(0, 0%, 90%);
-  background-color: hsl(175, 50%, 34%);
+  background-color: var(--color-primary-lighter-hover); /* TODO: välj värg */
 }
 
 /* media */

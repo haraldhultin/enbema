@@ -1,4 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 .header {
+  /* background-color: var(--color-primary); */
+
   min-height: 150px;
   display: flex;
   justify-content: center;
@@ -17,6 +23,7 @@
   flex-direction: column;
 }
 .header-title {
+  color: rgb(25, 19, 19);
   font-size: 3rem;
   font-weight: 700;
   line-height: 0.7rem;
@@ -55,8 +62,8 @@
 }
 
 .nav-header ul {
-  margin-left: auto;
-  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   list-style: none;
 }
 
@@ -69,13 +76,13 @@
 }
 
 .nav-header a {
-  color: rgb(25, 19, 19);
+  color: var(--color-primary-light);
   text-decoration: none;
-  font: normal 100 20px / 21px 'montserrat', sans-serif;
+  font: normal 500 20px / 21px 'montserrat', sans-serif;
   display: inline-block;
   position: relative;
 }
-
+s
 .nav-header a:after {
   content: '';
   position: absolute;
@@ -99,8 +106,10 @@
   visibility: visible;
   z-index: 20;
   top: 100%;
-  left: 100;
-  width: 300%;
+  /* dropdown menu offset */
+  /* left: 15%; */
+  width: 400%;
+  text-align: left;
 }
 
 li {
@@ -116,9 +125,14 @@ ul li ul {
   visibility: hidden;
   opacity: 0;
   position: relative;
-  transition: all 0.5s ease;
   left: 0;
-  display: none;
+  display: block;
+
+  /* fade in/out */
+  transition: visibility 0s linear 0s, opacity 400ms;
+
+  /* to make sure the menu does not pop up when hovering block area */
+  pointer-events: none;
 }
 
 ul li:hover > ul,
@@ -127,14 +141,21 @@ ul li ul:hover {
   opacity: 1;
   display: block;
   left: 0p;
-  background-color: hsla(0, 0%, 100% , 0.7);
+  background-color: hsla(0, 0%, 100%, 0.9);
   box-sizing: border-box;
+
+  /* to enable menu navigation */
+  pointer-events: auto;
 }
 
 ul li ul li {
   clear: both;
   width: 100%;
   height: 0px;
+}
+header ul {
+  padding-left: 1rem;
+  /* padding-top: .5rem; */
 }
 
 /* 
