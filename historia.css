@@ -3,9 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: hsl(175, 50%, 24%);
   padding-top: 5px;
   padding-bottom: 30px;
+  color: black;
 }
 :root {
   --primary-color: hsl(175, 50%, 24%);
