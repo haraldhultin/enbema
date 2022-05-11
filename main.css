@@ -32,7 +32,7 @@
   --clr-candidate-21: #006b4a; /*  */
   --clr-candidate-22: #454f43; /*  */
   --clr-candidate-23: #114400; /*  */
-  --clr-candidate-24: hsl(99, 50%, 15%); /* industrigrön rätt nice  */
+  --clr-candidate-24: hsla(99, 50%, 15%, .9); /* industrigrön rätt nice  */
   --clr-candidate-25: hsl(99, 50%, 20%); /* industrigrön rätt nice  */
   --clr-candidate-26: hsl(99, 50%, 35%); /* industrigrön rätt nice  */
   --clr-candidate-27: hsl(99, 50%, 25%); /* industrigrön rätt nice  */
