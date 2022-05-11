@@ -76,7 +76,7 @@
   position: relative;
 
   height: 100%;
-  border-left: 1px solid #e5e5e5;
+  border-left: 1.7px solid #e5e5e5;
 }
 .nav-header li:last-of-type {
   border-right: 1px solid #e5e5e5;

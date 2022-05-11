@@ -6,7 +6,7 @@
       }
 
 .produktTitle1 {
-  background-color: #e3f1f3;
+  background-color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@
         }
 
       .grid-productsWrapper {
-        background: #e3f1f3;
+        background: whitesmoke;
       }
       .grid-productsWrapper:hover {
         background-color: var( hsl(175, 50%, 44%)); /* TODO: välj värg */
