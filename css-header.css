@@ -89,7 +89,7 @@
   display: inline-block;
   position: relative;
 }
-s .nav-header a:after {
+.nav-header a:after {
   content: '';
   position: absolute;
   width: 100%;
