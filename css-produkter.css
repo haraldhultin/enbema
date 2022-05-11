@@ -12,7 +12,7 @@
   align-items: center;
   padding: 50px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: blue;
+  color: black;
   font-size: 26px;
     }
   
@@ -28,8 +28,19 @@
         background: white;
       
         }
+
+        .grid-products a{
+          text-decoration: none;
+          color: black;
+        }
+
       .grid-productsWrapper {
         background: #e3f1f3;
+      }
+      .grid-productsWrapper:hover {
+        background-color: var( hsl(175, 50%, 44%)); /* TODO: välj värg */
+        cursor: pointer;
+        box-shadow: 0 0 0.5rem 0 var(--color-primary-light); 
       }
 
       .grid > article {
