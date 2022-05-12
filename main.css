@@ -1,11 +1,12 @@
 :root {
   --color-primary: var(--clr-candidate-24);
-  --color-primary-text: var(--clr-candidate-25);
+  --color-primary-text: var(black);
   --color-primary-light: var(--clr-candidate-25);
   --color-primary-lighter: var(--clr-candidate-26);
   --color-primary-lighter-hover: var(--clr-candidate-27);
   --color-white: #fff;
   --color-complementary: #5c2d1f;
+  --color-slider: hsl(201, 68%, 79%);
 
   --clr-noxor-blue: hsl(217, 50%, 24%); /*  */
 
@@ -54,7 +55,9 @@
 body {
   color: var(--color-primary-text);
 
-  font-family: Montserrat, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
   margin: 0;
   padding: 0;
   line-height: 1.6rem; /* ? */

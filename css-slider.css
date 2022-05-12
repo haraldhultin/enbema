@@ -3,11 +3,11 @@
 *::after { box-sizing: border-box; }
 
 .slide-wrapper {
-  background-color: var(--color-primary);
+  background-color: var(--color-slider);
 
   /* background-color: rgb(218, 218, 230 */
   width: 100%;
-  height: 566px;
+  height: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,11 +15,11 @@
 
 }
 .slide-wrapper h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .slidetext {
   
-  color: var(--color-white);
+  
   line-height: 1.4;
   padding-right: 3rem;
   font-size: larger;
@@ -41,6 +41,7 @@
   height: 420px;
   overflow: hidden;
   padding-left: 15%;
+  clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
   
 
   /* border-radius: 5px; */
@@ -59,7 +60,7 @@
   width: 100%;
   height: 100%;
 
-  background-color: rgba(140, 22, 115, 0.2);
+
 }
 
 .card_part {
@@ -75,7 +76,9 @@
   
   transform: translateX( 600px );
   background-image: url("Enbema600-420.jpg");
+ 
   background-size: contain;
+  
 
   
   animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
@@ -157,16 +160,13 @@
     
     
     background-image: url("servicetekniker.png");
+    
     background-size: cover;
   }
 
   
  
 .cardwrapper2 {
-  /* background-color: var(--color-primary); */
-
-
-  /* background-color: rgb(218, 218, 230); */
   width: 100%;
   height: 400px;
   display: flex;
@@ -175,10 +175,11 @@
   }
 
   .slidetext2 {
-    position: relative;
-    width: 50%;
+  position: relative;
+  width: 50%;
   font-family: Montserrat, sans-serif;
   padding-right: 15%;
+  
   }
 
   .card3 {
@@ -186,7 +187,7 @@
     width: 450px;
     height: 300px;
     border-radius: 5px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    
   
   }
   
@@ -199,6 +200,7 @@
    
     
     background-image: url("komponenter.png");
+ 
     background-size: cover;
 
   }
@@ -207,11 +209,12 @@
     display: inline-block;
     border-radius: 2px;
     /* background-color: hsl(175, 50%, 24%); */
-    background-color: var(--color-primary-lighter-hover);
+    background-color: #ffae00;
     border: none;
-    color: #FFFFFF;
+    color: black;
     text-align: center;
     font-size: 13px;
+    font-weight: 700;
     padding: 10px;
     width: 110px;
     transition: all 0.5s;
@@ -247,12 +250,13 @@
   .button2 {
     display: inline-block;
     border-radius: 2px;
-    background-color: var(--color-primary-lighter-hover);
+    background-color: var(--color-slider);
 
     border: none;
-    color: #FFFFFF;
+    color: black;
     text-align: center;
     font-size: 13px;
+    font-weight: 700;
     padding: 10px;
     width: 110px;
     transition: all 0.5s;
@@ -288,12 +292,13 @@
   .button3 {
     display: inline-block;
     border-radius: 2px;
-    background-color: var(--color-primary-lighter-hover);
+    background-color: var(--color-slider);
 
     border: none;
-    color: #FFFFFF;
+    color: black;
     text-align: center;
     font-size: 13px;
+    font-weight: 700;
     padding: 10px;
     width: 110px;
     transition: all 0.5s;
