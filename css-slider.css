@@ -2,12 +2,13 @@
 *::before,
 *::after { box-sizing: border-box; }
 
+
 .slide-wrapper {
   background-color: var(--color-slider);
 
   /* background-color: rgb(218, 218, 230 */
   width: 100%;
-  height: 420px;
+  height: 480px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,6 +17,8 @@
 }
 .slide-wrapper h2 {
   font-size: 2rem;
+  border-bottom: 3px solid #ffae00;
+  text-align: center;
 }
 .slidetext {
   
@@ -37,8 +40,8 @@
 
 .card {
   position: relative;
-  width: 600px;
-  height: 420px;
+  width: 700px;
+  height: 480px;
   overflow: hidden;
   padding-left: 15%;
   clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
@@ -74,7 +77,7 @@
   width: 100%;
   height: 100%;
   
-  transform: translateX( 600px );
+  transform: translateX( 700px );
   background-image: url("Enbema600-420.jpg");
  
   background-size: contain;
@@ -113,8 +116,8 @@
 @keyframes opaqTransition {
   3% { transform: translateX( 0 ); }
   25% { transform: translateX( 0 ); }
-  28% { transform: translateX( -600px ); }
-  100% { transform: translateX( -600px ); }
+  28% { transform: translateX( -700px ); }
+  100% { transform: translateX( -700px ); }
 }
 
 
@@ -122,14 +125,18 @@
 
 .cardwrapper1 {
   background-color: var(--color-white);
-
-
-  /* background-color: rgb(201, 202, 222); */
   width: 100%;
-  height: 400px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  }
+
+  .slidetext1 h2 {
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 3px solid #ffae00;
   }
 
   .slidetext1 {
@@ -137,17 +144,16 @@
     position: relative;
     width: 50%;
     font-family: Montserrat, sans-serif;
-
     padding-left: 15%;
   }
 
   .card1 {
     position: relative;
-    width: 450px;
-    height: 300px;
+    width: 564px;
+    height: 400px;
     padding-right: 0;
     border-radius: 5px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+   
   
   }
   
@@ -159,9 +165,9 @@
     height: 100%;
     
     
-    background-image: url("servicetekniker.png");
+    background-image: url("IMG_0917.jpg");
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     
-    background-size: cover;
   }
 
   
@@ -172,6 +178,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-white);
+  padding-bottom: 1px;
+  border-bottom: 3px solid #ffae00;
+  }
+
+  .slidetext2 h2 {
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 3px solid #ffae00;
   }
 
   .slidetext2 {
@@ -200,7 +215,6 @@
    
     
     background-image: url("komponenter.png");
- 
     background-size: cover;
 
   }
