@@ -345,12 +345,78 @@
     right: 0;
   }
 
-  .reference {
+  .referenceTitle 
+  {
+    padding-top: 20px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 20px;
+  }
+
+  .marqueReferences {
+    height: 30vh;
+    padding-bottom: 20px;
+    display: flex;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    
+  } 
+
+  .marqueReferencesDiv {
+  
+    width: 80vw;
+    height: 20vh;
+    background-color: white;
+    color: orange;
+    overflow: hidden;
+    clear: both;
+    
+  }
+
+
+
+  
+
+  .marqueReferencesContent {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling 30s linear infinite;
+   
+  }
+
+  @keyframes scrolling {
+    0% {transform: translate(0vw);}
+    100% {transform: translate(-180vw);}
+  }
+
+
+  .marqueReferencesContent li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18vw;
+    flex-shrink: 0;
+    font-size: 5rem;
+    white-space: nowrap;
+    z-index: 1;
+    padding-left: 40px;
+    
+  }
+
+  /* .reference {
     background-color: var(--color-white);
 
     /* background-color: rgb(201, 202, 222); */
-  }
-
+  /* } */
+/* 
   .referenceGalleri {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -364,16 +430,16 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
-.referenceText {
+/* .referenceText {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-  font-family: Montserrat, sans-serif;
+  font-family: Montserrat, sans-serif; */
 
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  font-size: 18px;
+  /* font-size: 18px;
  
   }
