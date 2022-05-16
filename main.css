@@ -1,14 +1,21 @@
 :root {
-  --color-primary: var(--clr-noxor-blue);
+  --color-primary: var(--clr-candidate-20);
+  --color-primary-lighter: var(--clr-noxor-blue-lighter);
+  --color-primary-light: var(--clr-noxor-blue-highlight);
+
+
   --color-primary-text: var(black);
-  --color-primary-light: var(--clr-candidate-25);
-  --color-primary-lighter: var(--clr-candidate-26);
+  /* --color-primary-light: var(--clr-candidate-25); */
+  /* --color-primary-lighter: var(--clr-candidate-26); */
   --color-primary-lighter-hover: var(--clr-candidate-27);
   --color-white: #fff;
   --color-complementary: #5c2d1f;
-  --color-slider: hsl(201, 68%, 79%);
+  --color-slider: var(--clr-candidate-20);
 
-  --clr-noxor-blue: hsl(217, 51%, 39%); /*  */
+  --clr-noxor-blue: hsl(217, 50%, 24%); /*  */
+
+--clr-noxor-blue-lighter: #00aeef; /*  */
+--clr-noxor-blue-highlight:  hsl(217, 50%, 34%);/*  */
 
   --clr-candidate-1: #1f5c57; /* primary */
   --clr-candidate-2: #3f7671; /* monocromatic */

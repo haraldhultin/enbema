@@ -4,7 +4,8 @@
 
 
 .slide-wrapper {
-  background-color: var(--color-slider);
+  background-color: var(--color-primary);
+  color: white;
 
   /* background-color: rgb(218, 218, 230 */
   width: 100%;
