@@ -221,12 +221,14 @@
   }
 
   .button1 {
+  background-color: var(--color-primary-lighter);
+    color: white;
+
     display: inline-block;
     border-radius: 2px;
     /* background-color: hsl(175, 50%, 24%); */
     background-color: #ffae00;
     border: none;
-    color: black;
     text-align: center;
     font-size: 13px;
     font-weight: 700;
@@ -263,12 +265,13 @@
   }
 
   .button2 {
+    background-color: var(--color-primary-lighter);
+    color: white;
+
     display: inline-block;
     border-radius: 2px;
-    background-color: var(--color-slider);
 
     border: none;
-    color: black;
     text-align: center;
     font-size: 13px;
     font-weight: 700;
@@ -305,12 +308,13 @@
   }
 
   .button3 {
+    background-color: var(--color-primary-lighter);
+    color: white;
+
     display: inline-block;
     border-radius: 2px;
-    background-color: var(--color-slider);
 
     border: none;
-    color: black;
     text-align: center;
     font-size: 13px;
     font-weight: 700;
