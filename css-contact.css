@@ -1,48 +1,101 @@
+body {
+
+}
+
 .map-wrapper {
-  padding: 6rem;
+  padding: 3rem;
+  /* padding: 2rem 6rem 6rem 6rem; */
   background-color: var(--color-primary);
 }
 
 .map {
   width: 100vw;
-  max-width: 1400px;
+  max-width: 1440px;
   height: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.contact-us-bg {
-  background-color: var(--color-primary);
-}
+
+
 .contact-us-container {
-  background: none;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 1440px;
-
-  margin: 0 auto;
-}
-.contact-us-wrapper {
-  word-wrap: break-word;
-  display: flex;
-  flex-direction: row;
-}
-.contact-us-text {
-  width: 50%;
-}
-
-.contact-us-image {
-  width: 50%;
+  padding: 0;
   height: 100%;
+  margin: 0 auto;
+
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.2)
-    ),
-    url(contact-baground-img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  ),
+  url(contact-background-img.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+
 }
+
+.contact-us-information-wrapper{
+  margin-right: auto;
+  width: 50vw;
+
+  background-color: var(--color-primary);
+   
+
+}
+
+.contact-us-wrapper{
+
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  max-width: 720px;
+  
+}
+
+.contact-us-info{
+font-family: Montserrat;
+padding: 4rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+line-height: 5rem;
+}
+.contact-us-info h2{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+
+}
+
+
+.contact-us-text{
+font-family: Montserrat;
+padding: 2rem;
+}
+
+.contact-icon {
+  /* display: inline; */
+filter: invert(1);
+  height: 5em;
+  width: auto;
+  margin-top: 1rem;
+}
+
+/* .icon-mail{
+  display: inline-block;
+  background-repeat: no-repeat;
+filter: invert(1);
+  height: 50px;
+  width: 50px;
+}
+
+.icon-home{
+  display: inline-block;
+  background-repeat: no-repeat;
+filter: invert(1);
+  height: 50px;
+  width: 50px;
+} */
