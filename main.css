@@ -85,7 +85,6 @@ footer {
   min-height: 150px;
   /* border-top: 2px solid hsl(175, 50%, 74%);  */
   border-top: 2px solid var(--color-primary-light); /* TODO: välj värg */
-  padding: 2rem;
 }
 
 .nav-footer {
