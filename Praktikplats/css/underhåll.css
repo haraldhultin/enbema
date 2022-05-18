@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    padding : 0px;
+    background: white;
+    font-family: Montserrat;
+  }
+
+  .ServiceWrapper {
+      text-align: center;
+      padding-bottom: 25px;
+      color: black;
+  }
