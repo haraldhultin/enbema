@@ -1,96 +1,95 @@
-  body {
-        text-align: center;
-        padding : 0px;
-        background: white;
-        font-family: Montserrat;
-      }
+body {
+  text-align: center;
+  padding : 0px;
+  background: white;
+  font-family: Montserrat;
+}
 
 .produktTitle1 {
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 60px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: red;
-  font-size: 26px;
-  height: 100%; 
-  width: 100%;
-  background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(../res/img/Enbema1444-307.jpg);
- 
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 60px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: black;
+font-size: 26px;
+height: 200px;
+width: 100%;
+background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(Enbema1444-307.jpg);
 
- 
-  background-size: 100%;
-    }
+
+
+background-size: 100%;
+}
+
+
+
+
+.grid-products { 
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap: 100px;
+  align-items: end;
+  padding: 100px 230px 100px;
+  background: white;
   
-      
+
+  }
+
+  /* .grid-products a{
+    text-decoration: none;
+    color: black;
     
+  } */
 
-      .grid-products { 
-        display: grid;
-        grid-template-columns:1fr 1fr;
-        grid-gap: 100px;
-        align-items: end;
-        padding: 100px 230px 100px;
-        background: white;
-        
-      
-        }
-
-        /* .grid-products a{
-          text-decoration: none;
-          color: black;
-          
-        } */
-
-        
-      .grid-products h1 {
-        font-size: xx-large;
-        color: black;
-        padding-bottom: 20px;
-        border-bottom: 3px solid #ffae00;
-      }
-
-      .grid-productsWrapper {
-        background: white;
-       
-      }
-      /* .grid-productsWrapper:hover {
-        background-color: var( hsl(175, 50%, 44%)); /* TODO: välj värg */
-        /* cursor: pointer;
-        box-shadow: 0 0 0.5rem 0 var(--color-primary-light);  */
-     
-
-      .grid > article {
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-        
-      }
-      .grid > article img {
-        max-width: 100%;
-        background-color: var( hsl(175, 50%, 44%)); /* TODO: välj värg */
-        cursor: pointer;
-        box-shadow: 0 0 0.5rem 0 var(--color-primary-light); 
-      }
-     
   
+.grid-products h1 {
+  font-size: xx-large;
+  color: black;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #ffae00;
+}
 
-      a > button {
-        font-family: 'Open Sans Condensed';
-        font-weight: 700;
-        flex-shrink: 1;
-        background-color: var(--color-slider);
-        border: none;
-        color: black;
-        font-size: 1.5rem;
-        padding: 0.5rem;
-        width: 300px;
-        cursor: pointer;
-        }
-        a > button:hover {
-          
-            color: black;
-            background-color: #ffae00 ; /* TODO: välj värg */
-          
-        }
-      
+.grid-productsWrapper {
+  background: white;
+ 
+}
+/* .grid-productsWrapper:hover {
+  background-color: var( hsl(175, 50%, 44%)); /* TODO: välj värg */
+  /* cursor: pointer;
+  box-shadow: 0 0 0.5rem 0 var(--color-primary-light);  */
+
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  
+}
+.grid > article img {
+  max-width: 100%;
+  background-color: var( hsl(175, 50%, 44%)); /* TODO: välj värg */
+  cursor: pointer;
+  box-shadow: 0 0 0.5rem 0 var(--color-primary-light); 
+}
+
+
+
+a > button {
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  flex-shrink: 1;
+  background-color:  hsl(201, 68%, 79%);
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: 300px;
+  cursor: pointer;
+  }
+  a > button:hover {
+    
+      color: black;
+      background-color: #ffae00 ; /* TODO: välj värg */
+    
+  }
