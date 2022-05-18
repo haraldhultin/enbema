@@ -8,8 +8,6 @@
   color: white;
 }
 .slide-wrapper {
-  
-
   max-width: 1440px;
   margin: 0 auto; 
 
@@ -20,17 +18,20 @@
   
 
 }
-.slide-wrapper h2 {
+h2{
+
   font-size: 2rem;
+}
+.slide-wrapper h2 {
   border-bottom: 3px solid #ffae00;
   text-align: center;
 }
 .slidetext {
+  font-size: larger;
 
   
   line-height: 1.4;
   padding-right: 3rem;
-  font-size: larger;
 
   position: relative;
   
@@ -83,7 +84,7 @@
   height: 100%;
   
   transform: translateX( 700px );
-  background-image: url("Enbema600-420.jpg");
+  background-image: url("../res/img/Enbema600-420.jpg");
  
   background-size: contain;
   
@@ -95,7 +96,7 @@
 
 .card_part.card_two {
   z-index: 6;
-  background-image: url("TvaElevatorer.jpg");
+  background-image: url("../res/img/TvaElevatorer.jpg");
   background-size: contain;
 
   animation-delay: 7s;
@@ -103,7 +104,7 @@
 
 .card_part.card_three {
   z-index: 5;
-  background-image: url("skruvtransport600-420.jpg");
+  background-image: url("../res/img/skruvtransport600-420.jpg");
   background-size: cover;
   
   animation-delay: 14s;
@@ -111,7 +112,7 @@
 
 .card_part.card_four {
   z-index: 4;
-  background-image: url("spjäll700-500jpg.jpg");
+  background-image: url("../res/img/spjäll700-500jpg.jpg");
   animation-delay: 21s;
   background-size: contain;
 
@@ -140,12 +141,14 @@
   }
 
   .slidetext1 h2 {
+    
     padding-bottom: 10px;
     text-align: center;
     border-bottom: 3px solid #ffae00;
   }
 
   .slidetext1 {
+    font-size: larger;
 
     position: relative;
     width: 50%;
@@ -171,7 +174,7 @@
     height: 100%;
     
     
-    background-image: url("IMG_0917.jpg");
+    background-image: url("../res/img/IMG_0917.jpg");
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     
   }
@@ -202,6 +205,7 @@
   width: 50%;
   font-family: Montserrat, sans-serif;
   padding-right: 15%;
+  font-size: larger;
   
   }
 
@@ -222,7 +226,7 @@
     height: 100%;
    
     
-    background-image: url("komponenter.png");
+    background-image: url("../res/img/komponenter.png");
     background-size: cover;
 
   }
