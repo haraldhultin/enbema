@@ -1,7 +1,7 @@
   body {
         text-align: center;
         padding : 0px;
-        background: red;;
+        background: white;
         font-family: Montserrat;
       }
 
@@ -12,7 +12,7 @@
   align-items: center;
   padding: 60px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: black;
+  color: red;
   font-size: 26px;
   height: 100%; 
   width: 100%;
