@@ -1,17 +1,22 @@
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  padding: 0;
+
+}
 
 .header {
   /* background-color: var(--color-primary); */
 
-  height: 140px;
   display: flex;
   justify-content: center;
   align-items: stretch;
-  background-color: 	#E8E8E8;
 }
 .nav-header {
+  min-height: 140px;
+  background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,6 +37,7 @@
 }
 
 .header-enbema-logo {
+  max-height: 230px;
   max-width: auto;
 }
 /* .container-header {
@@ -61,10 +67,10 @@
   padding: 20px 15px;
   position: relative;
   height: 100%;
-  border-left: 1px solid	#C8C8C8;
+  border-left: 1px solid #c8c8c8;
 }
 .nav-header li:last-of-type {
-  border-right: 1px solid #e5e5e5;
+  border-right: 1px solid #c8c8c8;
 }
 
 header a {
@@ -98,15 +104,22 @@ header a {
 }
 
 .submenu {
+  background-color: white;
   position: absolute;
   visibility: visible;
   z-index: 20;
   top: 100%;
   width: 160%;
   text-align: left;
-  background-color: #E8E8E8;
   border: none;
-  box-shadow: 5px 5px #e5e5e5;
+  /* box-shadow: 5px 5px #e5e5e5; */
+}
+
+.submenu li {
+  border: none;
+}
+.submenu li:last-of-type {
+  border-right: none;
 }
 
 li {
@@ -127,7 +140,6 @@ ul li ul {
   display: block;
   padding: 0%;
   margin-block-end: 0px;
-  
 
   /* fade in/out */
   transition: visibility 0s linear 0s, opacity 400ms;
@@ -151,160 +163,67 @@ ul li ul li {
   width: 100%;
   height: 0px;
 }
+
 header ul {
   padding-left: 1rem;
-  
 }
 
-/* 
---OLD CSS --
-
-.header {
-  background-color: hsl(175, 50%, 24%);
-  height: 226px;
-  padding-bottom: 0px;
-}
-
-.header::after {
-content: '';
-display: false;
-clear: both;
-}
-
-
-.container-title {
-text-align: center;
-font-size: 30px;
-margin: auto;
-padding: 2px;
-padding-bottom: 0px;
-}
-
-.headerTitle {
-  color: rgb(25, 19, 19);;
-}
-
-.container-subtitle {
-  text-align: center;
-  font-size: 23px;
-  margin-bottom: 0px;
-  height: 20px
-
-  
-  
-}
-
-.headerSubtitle {
-  color: antiquewhite;
-  height: 20px
-}
-
-
-.container-header {
-  display: flex;
-  width: 75%;
-  margin: 0 auto;
-  padding-top: 0;
-  height: 50px;
-  
-}
-
-.logo {
-  float: relative;
-  padding-top: 4px;
-  height: 100px;
-  width: 150px;
-  margin-right: 0;
-}
-
-.nav {
-  float: right;
-  margin-left: 0;
-}
-
-.nav ul {
-  margin-left: 150px;
-  padding: 0;
-  list-style: none;
-}
-
-.nav li {
-  display: inline-block;
-  margin-right: 15px;
-  padding-top: 30px;
-  position: relative;
-}
-
-.nav a {
-  color: rgb(25, 19, 19);
-  text-decoration: none ;
-  font: normal 700 18px / 21px "Roboto Condensed", Helvetica, Arial, Verdana, sans-serif;
-  display: inline-block;
-  position: relative;  
-}
-
-.nav a:after {
-  content: '';
+.toggle-button {
+  height: 40px;
+  width: auto;
   position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background-color: rgb(25, 19, 19);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-
+  top: 46px;
+  right: 60px;
+  display: none;
 }
 
-.nav a:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom;
-} 
+@media (max-width: 1260px) {
+  .header-link-list {
+    display: none;
+  }
 
-.submenu {
-  position: absolute;
-  visibility: visible;
-  z-index: 200;
-  top: 100%;
-  left: 100;
-  width: 150px;
-  opacity: 1;
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .header-link-list {
+    position: absolute;
+    right: 0;
+    top: 124px; 
+    flex-direction: column;
+    align-items: flex-end;
+    width: auto;
+    background-color: white;
+  }
+
+  .submenu li{
+    background-color: white;
+    right: 60%;
+    width: 120%;
+  }
+  
+  .header-link-list li{
+    border: none;
+    padding-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 50px;
+  }
+  .header-link-list li:last-of-type {
+    border-right: none;
+  }
+
+  .header-link-list.active{
+    display: flex;
+  }
+.toggle-button:hover{
+  cursor: pointer;
 }
 
-li {
-  display: block;
-  transition-duration: 0.5s;
- }
- 
- li:hover {
-   cursor: pointer;
- }
- 
- ul li ul {
-   visibility: hidden;
-   opacity: 0;
-   position: relative;
-   transition: all 0.5s ease;
-   margin-top: 1rem;
-   left: 0;
-   display: none;
- }
- 
- ul li:hover > ul,
- ul li ul:hover {
-   visibility: visible;
-   opacity: 1;
-   display: block;
-   left: 0p;
-   background-color: rgba(255, 255, 255, 0.844);
-   box-sizing: border-box;
- }
- 
- ul li ul li {
-   clear: both;
-   width: 100%;
-   height: 0px;
- }
 
- */
+}
