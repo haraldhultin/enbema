@@ -1,32 +1,60 @@
+/* html{
+  padding: 0;
+  margin: 0;
+} */
+
 
 .contact-us-bg-box {
   background-color: var(--color-primary);
 }
 .contact-container {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
 
   font-family: "open sans condensed";
-  font-size: 2rem;
+  /* font-size: 2rem; */
   color: white;
-  padding: 0;
+  padding: 0 50px; 
   height: 100%;
   margin: 0 auto;
   max-width: 1440px;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     rgba(255, 255, 255, 0.2),
     rgba(255, 255, 255, 0.2)
     ),
     url(../res/img/contact-background-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment: scroll;
+    background-size: cover; */
   }
 
 .contact-us-information-wrapper {
-  margin-right: auto;
-  width: 50%;
-  
+  /* margin-right: auto; */
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
   background-color: var(--color-primary);
+}
+
+.contact-us-right-wrapper {
+  /* margin-left: auto; */
+  width: 50%;
+  min-width: 300px;
+  /* height: 100%; */
+  
+
+    background-image: 
+    linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+    ),
+    url(../res/img/contact-background-img.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
 .contact-us-wrapper {
@@ -51,7 +79,7 @@
 }
 
 .contact-us-text p{
-
+padding-right: 4rem;
 }
 .contact-us-text {
   font-family: Arial;
@@ -62,9 +90,9 @@
 
 .contact-icon {
   filter: invert(1);
-  height: 5em;
+  height: 3rem;
   width: auto;
-  margin: 1rem;
+  margin: 2rem 1rem;
 }
 
 .map-wrapper {
@@ -74,10 +102,46 @@
 }
 
 .map {
-  width: 100vw;
+  width: 100%;
   max-width: 1440px;
   height: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.img-small-screen{
+  display: none;
+}
+
+@media (max-width: 1200px){
+ 
+  .contact-us-right-wrapper{
+    display: none;
+  }
+  .div.contact-us-text{
+  }
+
+  .div.contact-us-information-wrapper{
+margin: 0 auto;
+}
+
+.img-small-screen{
+  max-height: 300px;
+  /* margin: 0 50px; */
+
+  display: block;
+  height: 300px;
+  background-image: 
+  linear-gradient(
+  rgba(255, 255, 255, 0.2),
+  rgba(255, 255, 255, 0.2)
+  ),
+  url(../res/img/contact-background-img.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: scroll;
+  background-size: cover;
+  
+}
 }

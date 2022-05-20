@@ -47,3 +47,23 @@ footer {
   .copyright {
     font-size: 0.7rem;
   }
+
+
+  @media (max-width: 1200px) {
+    .copyright {
+      display: none;
+    }
+  @media (max-width: 900px) {
+
+  /* Aimera? */
+  /* .footer-link-list { */
+  /* flex-wrap: wrap;  flytta upp?  */
+  /* width: 265px; <-- lös snyggare */
+  /* } */
+  .footer-link-list {
+    display: none;
+  }
+  .nav-footer {
+    justify-content: center;
+  }
+}
