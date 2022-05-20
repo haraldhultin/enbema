@@ -89,23 +89,9 @@ body {
   .card-link-text {
     display: none;
   }
-  .copyright {
-    display: none;
-  }
+
 }
-@media (max-width: 900px) {
-  /* Aimera? */
-  /* .footer-link-list { */
-  /* flex-wrap: wrap;  flytta upp?  */
-  /* width: 265px; <-- lös snyggare */
-  /* } */
-  .footer-link-list {
-    display: none;
-  }
-  .nav-footer {
-    justify-content: center;
-  }
-}
+
 @media (max-width: 660px) {
   .card-company {
     flex: 90%;

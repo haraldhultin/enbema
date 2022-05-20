@@ -176,13 +176,13 @@ header ul {
   display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1260px) {
   .header-link-list {
     display: none;
   }
 
   .header-enbema-logo {
-    margin-top: 37.5px;
+    /* margin-top: 37.5px; */
     /* margin-bottom: 37.5px; */
   }
 
@@ -205,9 +205,7 @@ header ul {
     width: auto;
     background-color: white;
   }
-  .submenu{
-    
-  }
+
   .submenu li{
     background-color: white;
     right: 60%;
