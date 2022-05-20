@@ -72,6 +72,20 @@ body {
   min-width: 320px; /* ? */
 }
 
+h1, h2, h3, h4 {
+  
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: "Montserrat";
+    border-bottom: 3px solid #ffae00;
+    line-height: normal;
+
+    text-transform: uppercase;
+  
+  
+}
+
 /* img {
   max-width: 100%;
   height: auto;

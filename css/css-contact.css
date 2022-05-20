@@ -6,7 +6,9 @@
 
 .contact-us-bg-box {
   background-color: var(--color-primary);
+  
 }
+
 .contact-container {
   display: flex;
   justify-content: center;
@@ -71,11 +73,15 @@
   justify-content: center;
   align-items: center;
   line-height: normal;
+  font-size: 1.5rem;
 }
 .contact-us-info h2 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  font-family: "Montserrat";
+  border-bottom: 3px solid #ffae00;
+
 }
 
 .contact-us-text p{
@@ -83,7 +89,7 @@ padding-right: 4rem;
 }
 .contact-us-text {
   font-family: Arial;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 2rem;
 
 }
