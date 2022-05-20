@@ -29,7 +29,7 @@
     /* text-align: justify; */
     text-align: center;
     min-height: 350px;
-  
+    max-width: 300px;
     /* grid?*/
     /* flex: 1 1 calc(20% - 12px);  */
     flex: 10%; /* <-- lös snyggare */
@@ -43,6 +43,8 @@
   
   .card-company-text {
     margin-top: 2rem;
+    font-family: "Montserrat";
+    /* padding: 1rem; */
   }
   .card-link-text {
     /* fimpa? */

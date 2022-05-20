@@ -197,7 +197,7 @@ header ul {
     right: 0;
     top: 124px; 
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     width: auto;
     background-color: white;
     z-index: 20;
