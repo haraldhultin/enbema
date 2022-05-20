@@ -200,6 +200,7 @@ header ul {
     align-items: flex-end;
     width: auto;
     background-color: white;
+    z-index: 20;
   }
 
   .submenu li{
