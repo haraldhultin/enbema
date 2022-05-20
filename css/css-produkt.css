@@ -148,13 +148,8 @@ margin-bottom: 25px;
 
 
 @media ( min-width : 1025px) {
-/* 
-  body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
 
-  } */
+ 
 
   .container-produkt {
       background-color:white;
@@ -167,8 +162,9 @@ margin-bottom: 25px;
   .card {
       flex-direction: row;
       height: 100%;
-      width: 100%;
-     
+      align-items: center;
+      justify-content: center;
+
   }
 
   .images {
@@ -187,8 +183,10 @@ margin-bottom: 25px;
       margin-top: 0px;
       height: 80%;
       width: 50%;
-     font-size: 20px;
-      padding-right: 70px;
+      font-size: 20px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
       
   }
 
