@@ -205,10 +205,11 @@ header ul {
     width: auto;
     background-color: white;
   }
-
+  .submenu{
+    
+  }
   .submenu li{
     background-color: white;
-
     right: 60%;
     width: 120%;
   }
@@ -216,7 +217,7 @@ header ul {
   .header-link-list li{
     border: none;
     padding-top: 1rem;
-    padding-left: 2rem;
+    margin-left: 2rem;
     margin-right: 50px;
   }
   .header-link-list li:last-of-type {
