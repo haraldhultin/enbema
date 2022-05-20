@@ -79,7 +79,6 @@ margin-bottom: 25px;
 
 
 #info-content {
-  font-size: 15px;
   height: 270px;
  
 }
@@ -87,7 +86,6 @@ margin-bottom: 25px;
 
 #info-content p {
   padding: 3px;
-  font-size: 15px;
   height: 200px;
   width: 570px;
   overflow-wrap:normal;
