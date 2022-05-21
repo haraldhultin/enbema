@@ -41,6 +41,20 @@ h2{
 
 }
 
+span.spantext:before{
+  content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.';
+  animation: ani1 infinite 30s;
+}
+
+@keyframes ani1 {
+  50% 
+  {content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.' }
+
+  100% {
+   content: 'Vi utför leveranser av enstaka maskiner eller kompletta system för bulkgodshantering. Våra kunder är t.ex. energiverk, cellulosaindustrin, cementindustrin, kemisk industri.' ;
+  }
+}
+
 
 
 

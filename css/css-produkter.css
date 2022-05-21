@@ -45,7 +45,7 @@ background-size: 100%;
 
   
 .grid-products h1 {
-  font-size: xx-large;
+  font-size: 1.7rem;
   color: black;
   padding-bottom: 20px;
   border-bottom: 3px solid #ffae00;
@@ -77,14 +77,14 @@ background-size: 100%;
 
 a > button {
   font-family: 'Open Sans Condensed';
-  font-weight: 700;
+  font-weight: 600;
   flex-shrink: 1;
   background-color:  hsl(201, 68%, 79%);
   border: none;
   color: black;
   font-size: 1.5rem;
   padding: 0.5rem;
-  width: 300px;
+  width: 250px;
   cursor: pointer;
   }
   a > button:hover {
