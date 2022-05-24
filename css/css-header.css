@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  margin: 0 50px;
   list-style: none;
   width: 1440px;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .header-enbema-logo {
-  max-height: 230px;
+  max-height: 130px;
   max-width: auto;
 }
 /* .container-header {
@@ -225,6 +225,17 @@ header ul {
 .toggle-button:hover{
   cursor: pointer;
 }
+
+
+}
+
+@media(max-width: 425px){
+  .toggle-button{
+    margin-top: 1rem;
+    position: sticky;
+    justify-self: center;
+    align-self: center;
+  }
 
 
 }
