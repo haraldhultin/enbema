@@ -11,7 +11,7 @@
   max-width: 1440px;
   margin: 0 auto; 
 
-  height: 480px;
+  min-height: 480px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,7 +30,7 @@ h2{
   font-size: larger;
 
   
-  line-height: 1.4;
+  line-height: normal;
   padding-right: 3rem;
 
   position: relative;
@@ -61,7 +61,7 @@ span.spantext:before{
 .card {
   position: relative;
   width: 700px;
-  height: 480px;
+  min-height: 480px;
   overflow: hidden;
   padding-left: 15%;
   clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
