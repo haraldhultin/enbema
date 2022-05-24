@@ -449,3 +449,23 @@ span.spantext:before{
     
   }
 
+@media(max-width: 810px){
+  .slide-wrapper{
+    flex-direction: column;
+  }
+  .cardwrapper1{
+    flex-direction: column;
+  }
+  .cardwrapper2{
+    flex-direction: column;
+  }
+  .slidetext{
+    width: 100%;
+  }
+  .slidetext1{
+    width: 100%;
+  }
+  .slidetext2{
+    width: 100%;
+  }
+}
