@@ -91,6 +91,8 @@ margin-bottom: 25px;
   height: 200px;
   width: 570px;
   overflow-wrap:normal;
+  font-size: 1.1rem;
+  font-weight: 530;
 }
 
 .slider {
@@ -152,9 +154,9 @@ a > button {
   background-color:  hsl(201, 68%, 79%);
   border: none;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 0.5rem;
-  width: 380px;
+  width: 23rem;
   cursor: pointer;
   }
   a > button:hover {
