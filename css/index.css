@@ -3,7 +3,7 @@
 *::after { box-sizing: border-box; }
 
 .slide-bg-box{
-  /* width: 100vw; */
+  width: 100vw;
   background-color: var(--color-primary);
   color: white;
 }
@@ -147,7 +147,7 @@ span.spantext:before{
   background-color: var(--color-white);
   max-width: 1440px;
   margin: 0 auto;
-  height: 450px;
+  min-height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,12 +156,17 @@ span.spantext:before{
 
   .slidetext1 h2 {
     
+    word-wrap: break-word;
+    line-height: normal;
     padding-bottom: 10px;
     text-align: center;
     border-bottom: 3px solid #ffae00;
   }
-
+  .slidetext1 p{
+    word-wrap: break-word;
+  }
   .slidetext1 {
+
     font-size: larger;
 
     position: relative;
@@ -173,7 +178,7 @@ span.spantext:before{
   .card1 {
     position: relative;
     width: 564px;
-    height: 400px;
+    min-height: 400px;
     padding-right: 0;
     border-radius: 5px;
    
@@ -185,7 +190,7 @@ span.spantext:before{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     
     
     background-image: url("../res/img/IMG_0917.jpg");
@@ -199,7 +204,7 @@ span.spantext:before{
   max-width: 1440px;
   margin: 0 auto;
 
-  height: 400px;
+  min-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,7 +231,7 @@ span.spantext:before{
   .card3 {
     position: relative;
     width: 450px;
-    height: 300px;
+    min-height: 300px;
     border-radius: 5px;
     
   
