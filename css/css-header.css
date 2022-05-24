@@ -231,6 +231,7 @@ header ul {
 
 @media(max-width: 425px){
   .toggle-button{
+    margin-top: 1rem;
     position: sticky;
     justify-self: center;
     align-self: center;
