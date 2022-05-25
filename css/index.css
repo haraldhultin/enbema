@@ -488,20 +488,29 @@ span.spantext:before{
   }
   .cardwrapper1{
     flex-direction: column;
+    min-height: 200px;
   }
   .cardwrapper2{
     flex-direction: column;
+    min-height: 200px;
+
   }
   .slidetext{
     width: 100%;
+    padding: 0;
+
   }
   .slidetext1{
     width: 100%;
+    padding: 0;
+
   }
   .slidetext2{
     width: 100%;
+    padding: 0 0 2rem 0;
+
   }
-  .card{
+  .card, .card1, .card2, .card3, .card4 {
     display: none;
   }
 }
