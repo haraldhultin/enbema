@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  min-width: 320px;
+
 
 }
 
@@ -14,7 +14,7 @@ body {
   width: 90%;
   padding-top: 50px;
   padding-bottom: 200px;
-  
+
 }
 
 
@@ -48,7 +48,7 @@ margin-bottom: 25px;
 .infos #more-infos {
   display: flex;
   justify-content: flex-start;
- 
+
   color: rgb(17, 7, 7);
 }
 
@@ -82,7 +82,7 @@ margin-bottom: 25px;
   height: 440px;
 
 
- 
+
 }
 
 
@@ -117,7 +117,7 @@ margin-bottom: 25px;
 }
 
 .img-slider div {
-  width: 20%;
+
   height: 100%;
 }
 
@@ -130,22 +130,8 @@ margin-bottom: 25px;
   padding-bottom: 0;
 
 }
-.DownloadHover {
-  font-family: 'Open Sans Condensed';
-  font-weight: 350;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  padding: 0.8em 1em 0.8em 1em;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: left;
-}
 
-.DownloadHover:hover {
 
-  color: hsl(175, 50%, 34%);
-}
 
 a > button {
   font-family: 'Open Sans Condensed';
@@ -160,24 +146,24 @@ a > button {
   cursor: pointer;
   }
   a > button:hover {
-    
+
       color: black;
       background-color: #ffae00 ; /* TODO: välj värg */
-    
+
   }
 
 
 
 @media ( min-width : 1025px) {
 
- 
+
 
   .container-produkt {
       background-color:white;
       display: flex;
       align-items: center;
       justify-content: center;
-      
+
   }
 
   .card {
@@ -208,7 +194,7 @@ a > button {
       align-items: center;
       justify-content: center;
       padding: 10px;
-      
+
   }
 
   .infos h1 {
@@ -217,13 +203,13 @@ a > button {
       margin-left: auto;
       margin-right: auto;
   }
-    
+
   .img-slider {
       width: 50%;
   }
 
 }
-  
+
 
 
 
@@ -233,7 +219,7 @@ a > button {
       display: flex;
       align-items: center;
       justify-content: center;
-      
+
   }
 
 
@@ -245,4 +231,46 @@ a > button {
 
 }
 
+@media(max-width: 670px) {
 
+
+
+
+
+#info-content p  {
+  padding-top: 20px;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+#info-content h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+.container-produkt {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+a > .buttonProducts {
+  font-family: 'Open Sans Condensed';
+  font-weight: 300;
+  flex-shrink: 1;
+  background-color:  hsl(201, 68%, 79%);
+  border: none;
+  color: black;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  width: 100vw;
+  cursor: pointer;
+  }
+
+}
