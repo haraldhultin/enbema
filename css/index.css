@@ -475,6 +475,22 @@ span.spantext:before{
     
   }
 
+
+@media(max-width: 1200px) {
+.card1, .card2 {
+    display: none;
+  }
+  .cardwrapper1{
+    flex-direction: column;
+    min-height: 200px;
+  }
+  .slidetext1{
+    width: 100%;
+    padding: 0;
+
+  }
+}
+
 @media(max-width: 810px){
   .slide-wrapper{
     flex-direction: column;
@@ -488,20 +504,35 @@ span.spantext:before{
   }
   .cardwrapper1{
     flex-direction: column;
+    min-height: 200px;
   }
   .cardwrapper2{
     flex-direction: column;
+    min-height: 200px;
+
   }
   .slidetext{
     width: 100%;
+    padding: 0;
+
   }
   .slidetext1{
     width: 100%;
+    padding: 0;
+
   }
   .slidetext2{
     width: 100%;
+    padding: 0 0 2rem 0;
+
   }
-  .card{
+  .card, .card1, .card2, .card3, .card4 {
     display: none;
+  }
+  .referenceTitle{
+    padding: 0 50px;
+  }
+  .referenceTitle h2{
+    text-align: center;
   }
 }
