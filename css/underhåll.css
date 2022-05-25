@@ -6,8 +6,10 @@ body {
 
 
 .text1{
-  font-size: 1.1rem;
-  font-weight: 530;
+  font-size: larger;
+  /* font-weight: 530; */
+  font-family: Montserrat;
+
 }
 
 
@@ -40,8 +42,10 @@ body {
       color: black;
       padding-bottom: 10px;
       border-bottom: 3px solid #ffae00;
-      font-size: 1.9rem;
-      font-weight: 500; 
+      font-size: 2rem;
+      font-family: Montserrat;
+      font-weight: bold; 
+      text-transform: uppercase;
       
 
     }
@@ -50,7 +54,7 @@ body {
       float: right;
     }
 
-    a > button {
+    /* a > button {
       font-family: 'Open Sans Condensed';
       font-weight: 600;
       flex-shrink: 1;
@@ -61,14 +65,60 @@ body {
       padding: 1rem;
       max-width: 320px;
       cursor: pointer;
-      }
+      } */
       a > button:hover {
         
           color: black;
-          background-color: #ffae00 ; /* TODO: välj värg */
+          background-color: #ffae00 ; 
         
       }
 
+
+
+      .button {
+        background-color: var(--color-primary-lighter);
+        color: white;
+    
+        display: inline-block;
+        border-radius: 2px;
+        font-size: 1rem;
+        border: none;
+        text-align: center;
+        font-weight: 700;
+        padding: 10px ;
+        width: 350px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+
+      text-transform: uppercase;
+
+      }
+      
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      .button:hover span {
+        padding-right: 25px;
+      }
+      
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
 
     @media(max-width: 960px){
       .gridService{
