@@ -513,4 +513,10 @@ span.spantext:before{
   .card, .card1, .card2, .card3, .card4 {
     display: none;
   }
+  .referenceTitle{
+    padding: 0 50px;
+  }
+  .referenceTitle h2{
+    text-align: center;
+  }
 }
