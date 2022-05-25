@@ -15,13 +15,12 @@
   min-height: 480px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   
   padding: 0 50px;
 
 }
 h2{
-
   font-size: 2rem;
 }
 .slide-wrapper h2 {
@@ -29,7 +28,7 @@ h2{
   text-align: center;
 }
 .slidetext {
-  font-size: larger;
+  font-size: 1rem;
 
   
   line-height: normal;
@@ -41,6 +40,10 @@ h2{
   width: 40%;
   font-family: Montserrat, sans-serif;
 
+}
+
+span.spantext{
+  font-size: larger;
 }
 
 span.spantext:before{
@@ -151,7 +154,7 @@ span.spantext:before{
   margin: 0 auto;
   min-height: 450px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0 50px;
 
@@ -180,7 +183,7 @@ span.spantext:before{
 
   .card1 {
     position: relative;
-    width: 564px;
+    min-width: 564px;
     min-height: 400px;
     padding-right: 0;
     border-radius: 5px;
@@ -245,7 +248,7 @@ span.spantext:before{
     font-family: Montserrat, sans-serif;
     padding-right: 15%;
     font-size: larger;
-    padding: 0 50px;
+    /* padding: 0 50px; */
   
   }
 
@@ -475,6 +478,13 @@ span.spantext:before{
 @media(max-width: 810px){
   .slide-wrapper{
     flex-direction: column;
+    min-height: 200px;
+    padding-bottom: 2rem;
+
+  }
+  .card2 {
+
+    clip-path: circle(40%);
   }
   .cardwrapper1{
     flex-direction: column;
@@ -490,5 +500,8 @@ span.spantext:before{
   }
   .slidetext2{
     width: 100%;
+  }
+  .card{
+    display: none;
   }
 }
