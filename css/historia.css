@@ -88,3 +88,16 @@ body {
 .card p {
   color: rgb(11, 11, 22);
 }
+
+@media (max-width: 1200px) {
+  .historyWrapper  {
+   
+    text-align: center;
+  }
+  .timelineHistory{
+    height: auto;
+    width: auto;
+    background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(../res/img/historiaImage.jpg);
+    background-position: 25% 0%;
+  }
+}

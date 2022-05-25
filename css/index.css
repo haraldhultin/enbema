@@ -4,7 +4,7 @@
 
 
 .slide-bg-box{
-  width: 100vw;
+  width: auto;
   background-color: var(--color-primary);
   color: white;
 }
