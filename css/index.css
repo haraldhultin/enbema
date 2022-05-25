@@ -320,7 +320,7 @@ span.spantext:before{
     opacity: 1;
     right: 0;
   }
-
+  
   .button2 {
     background-color: var(--color-primary-lighter);
     color: white;
