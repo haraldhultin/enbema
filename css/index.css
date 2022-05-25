@@ -401,13 +401,13 @@ span.spantext:before{
     justify-content: center;
     align-items: center;
     padding: 0 50px;
-    max-width: 1440px;
+    max-width: 1200px;
       margin: 0 auto;
   } 
 
   .marqueReferencesDiv {
   
-    max-width: 1440px;
+    max-width: 1200px;
     height: auto;
     background-color: white;
     color: orange;
@@ -425,7 +425,7 @@ span.spantext:before{
     list-style: none;
     height: 100%;
     display: flex;
-    animation: scrolling 30s linear infinite;
+    animation: scrolling 35s linear infinite;
    
   }
 
@@ -436,11 +436,10 @@ span.spantext:before{
 
 
   .marqueReferencesContent li {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 20vw;
     flex-shrink: 0;
     font-size: 5rem;
     white-space: nowrap;
