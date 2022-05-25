@@ -4,7 +4,6 @@
 body {
   margin: 0;
   padding: 0;
-
 }
 
 .header {
@@ -195,7 +194,7 @@ header ul {
   .header-link-list {
     position: absolute;
     right: 0;
-    top: 124px; 
+    top: 124px;
     flex-direction: column;
     align-items: flex-start;
     width: auto;
@@ -203,13 +202,13 @@ header ul {
     z-index: 20;
   }
 
-  .submenu li{
+  .submenu li {
     background-color: white;
     right: 60%;
     width: 120%;
   }
-  
-  .header-link-list li{
+
+  .header-link-list li {
     border: none;
     padding-top: 1rem;
     margin-left: 2rem;
@@ -219,23 +218,41 @@ header ul {
     border-right: none;
   }
 
-  .header-link-list.active{
+  .header-link-list.active {
     display: flex;
   }
-.toggle-button:hover{
-  cursor: pointer;
+  .toggle-button:hover {
+    cursor: pointer;
+  }
 }
 
-
-}
-
-@media(max-width: 425px){
-  .toggle-button{
+@media (max-width: 425px) {
+  .toggle-button {
     margin-top: 1rem;
     position: sticky;
     justify-self: center;
     align-self: center;
   }
 
+  .submenu li {
+    right: 10%;
+    width: 100%;
+  }
+  .submenu li a {
+    text-align: leftx;
+  }
+  .header-link-list {
+    width: 100vw;
+  }
+  .nav-header {
+    align-items: center;
+    min-height: 140px;
+  }
 
+  .header-enbema-logo {
+    margin-top: 37.5px;
+  }
+  .toggle-button {
+    margin: 0 0 1rem 0;
+  }
 }
