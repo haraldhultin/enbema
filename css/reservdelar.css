@@ -35,7 +35,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
   .ServiceWrapper h1 {
       color: black;
@@ -43,7 +42,6 @@ body {
       border-bottom: 3px solid #ffae00;
       font-size: 1.9rem;
       font-weight: 500; 
-      text-align: center;
       
 
     }
@@ -72,12 +70,11 @@ body {
       }
 
 
-    @media(max-width: 900px){
+    @media(max-width: 960px){
       .gridService{
         display: flex;
         flex-direction: column;
         padding: 0 50px 1rem;
-        text-align: center;
 
         }
       .image{
