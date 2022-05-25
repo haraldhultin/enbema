@@ -1,5 +1,6 @@
 .contact-us-bg-box {
   background-color: var(--color-primary);
+  padding: 50px;
 }
 
 .contact-container {
@@ -13,7 +14,8 @@
   /* padding: 0 50px; */
   height: 100%;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: auto;
+  
   /* background-image: linear-gradient(
     rgba(255, 255, 255, 0.2),
     rgba(255, 255, 255, 0.2)
@@ -31,6 +33,7 @@
   display: flex;
   justify-content: center;
   background-color: var(--color-primary);
+  margin: 100px;
 }
 
 .contact-us-right-wrapper {
@@ -111,6 +114,7 @@
 @media (max-width: 1200px) {
   .contact-us-info span {
     padding-left: 1rem;
+    text-align: center;
   }
   .contact-us-right-wrapper {
     display: none;
@@ -118,6 +122,7 @@
 
   .div.contact-us-information-wrapper {
     margin: 0 auto;
+    padding: 0;
   }
 
   .img-small-screen {
