@@ -300,9 +300,9 @@ span.spantext:before {
 }
 
 .button2 {
-  background-color: var(--color-button-blue);
+  background-color: hsl(201, 60%, 79%);
 
-  color: white;
+  color: black;
 
   display: inline-block;
   border-radius: 2px;
@@ -344,8 +344,8 @@ span.spantext:before {
 }
 
 .button3 {
-  background-color: var(--color-button-blue);
-  color: white;
+  background-color: hsl(201, 60%, 79%);
+  color: black;
 
   display: inline-block;
   border-radius: 2px;

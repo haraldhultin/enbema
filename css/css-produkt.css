@@ -10,8 +10,18 @@ body {
   height: 100%;
   width: 90%;
   padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.container-produktSpjäll {
+  position: relative;
+  height: 100%;
+  width: 90%;
+  padding-top: 50px;
   padding-bottom: 200px;
 }
+
 
 .card {
   padding-top: 0;
@@ -64,13 +74,30 @@ h1 {
   height: 440px;
 }
 
+#info-contentSpjäll {
+  height: 440px;
+  font-size: 15px;
+}
+
 #info-content p {
+  font-family: var(  --font-arial);
   padding: 3px;
   height: 200px;
   width: 570px;
   overflow-wrap: normal;
   font-size: 1.1rem;
-  font-weight: 530;
+  font-weight: 540;
+}
+
+
+#info-contentSpjäll p {
+  font-family: var(  --font-arial);
+  padding: 3px;
+  height: 300px;
+  width: 570px;
+  overflow-wrap: normal;
+  font-size: 1.1rem;
+  font-weight: 540;
 }
 
 .slider {
@@ -165,6 +192,7 @@ a > button:hover {
     color: black;
     margin-left: auto;
     margin-right: auto;
+    
   }
 
   .img-slider {
@@ -186,6 +214,12 @@ a > button:hover {
 }
 
 @media (max-width: 670px) {
+ 
+  #info-content {
+    height: 26rem;
+  }
+
+
   #info-content p {
     padding-top: 20px;
     width: 100vw;
@@ -197,15 +231,48 @@ a > button:hover {
     text-align: center;
     padding-top: 20px;
   }
+
+  
+
+  #info-contentSpjäll {
+    height: 42rem;
+  }
+
+  #info-contentSpjäll p {
+    padding-top: 20px;
+    height: 50rem;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #info-contentSpjäll h1 {
+    text-align: center;
+    padding-top: 20px;
+  }
+
   .container-produkt {
     position: relative;
     height: 100%;
     width: 100vw;
     padding-top: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 7rem;
     justify-content: center;
     align-items: center;
+  
   }
+  
+.container-produktSpjäll {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+
+}
+  
 
   a > .buttonProducts {
     font-family: 'Open Sans Condensed';
@@ -219,4 +286,5 @@ a > button:hover {
     width: 100vw;
     cursor: pointer;
   }
+
 }
