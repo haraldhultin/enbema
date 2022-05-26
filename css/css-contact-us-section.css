@@ -1,51 +1,92 @@
-
-
 .contact-us-container {
-    background-color: var(--color-primary);
+  background-color: var(--color-primary);
+
+
+
+  color: white;
+  font-family: var(--font-open-sans-condensed);
+  font-family: var(--font-arial);
   
-    color: white;
-    font-family: 'Open Sans Condensed';
   
-    font-weight: 700;
-    padding: 4em;
-    line-height: normal;
+  font-weight: 700;
+  padding: 4em 1rem;
+  line-height: normal;
+  letter-spacing: 5px;
   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
-    min-width: 320px;
-  }
-  
-  .question-contact-us {
-    font-family: 'Open Sans Condensed';
-    color: var(--color-white); /* TODO: välj värg */
-    text-align: center;
-    font-size: 2.5rem;
-    /* line-height: normal; */
-    margin: 0rem;
-  }
-  .title-contact-us {
-    font-family: 'Open Sans Condensed';
-    text-align: center;
-    font-size: 4.5rem;
-    margin: 0.8rem;
-  }
-  
-  .contact-us-button {
-    font-family: 'Open Sans Condensed';
-    font-weight: 700;
-    background-color: var(--color-primary-lighter); /* TODO: välj värg */
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    min-width: 250px;
-    padding: 0.8em 1em 0.8em 1em;
-    cursor: pointer;
-    text-align: center;
-  }
-  .contact-us-button:hover {
-    color: hsl(0, 0%, 90%);
-    background-color: var(--color-primary-lighter-hover); /* TODO: välj värg */
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+}
+
+.question-contact-us {
+  color: var(--color-text-light); 
+  text-align: center;
+  font-size: 2.5rem;
+}
+.title-contact-us {
+  text-align: center;
+  font-size: 4.5rem;
+  margin: 1rem 0 2rem 0;
+}
+
+
+.contact-us-button:hover {
+  color: hsl(0, 0%, 90%);
+  background-color: var(--color-button-blue-hover-dark);
+  background-color: var(--color-button-yellow);
+}
+
+.button-link {
+  width: 100%;  
+  max-width: 400px;
+}
+
+.contact-us-button {
+  background-color: var(--color-button-blue);
+  font-family: var(--font-open-sans-condensed);
+  font-family: var(--font-arial);
+
+
+  color: white;
+
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  border: none;
+  text-align: center;
+  font-weight: 700;
+  padding: .8em 1em;
+  transition: all 0.5s;
+  cursor: pointer;
+  width: 100%;  
+}
+
+.contact-us-button span {
+  cursor: pointer;
+  /* display: inline-block; */
+  position: relative;
+  transition: 0.5s;
+  padding: 0 1em;
+  text-transform: uppercase;
+}
+
+.contact-us-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.contact-us-button:hover span {
+  padding: 0 1.5em 0 0;
+}
+
+.contact-us-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

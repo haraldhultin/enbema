@@ -1,21 +1,15 @@
 body {
   /* text-align: center; */
-  padding : 0px;
-  background: white;
+  padding: 0px;
 }
 
-
-.text1{
+.text1 {
   font-size: larger;
   /* font-weight: 530; */
   font-family: Montserrat;
-
 }
 
-
-
 .gridService {
-   
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 100px;
@@ -24,37 +18,31 @@ body {
   background: white;
   margin: 0 auto;
   max-width: 1440px;
+}
 
+.image {
+  grid-row: 1/3;
+  clip-path: polygon(0 0, 75% 0%, 100% 50%, 75% 100%, 0 100%, 0% 50%);
+}
+.ServiceWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ServiceWrapper h1 {
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-border-yellow);
+  font-size: 2rem;
+  font-family: Montserrat;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
-  }
+.img {
+  float: right;
+}
 
-
-  .image{
-    grid-row: 1/3;
-    clip-path: polygon(0 0, 75% 0%, 100% 50%, 75% 100%, 0 100%, 0% 50%);
-  }
-  .ServiceWrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .ServiceWrapper h1 {
-      color: black;
-      padding-bottom: 10px;
-      border-bottom: 3px solid #ffae00;
-      font-size: 2rem;
-      font-family: Montserrat;
-      font-weight: bold; 
-      text-transform: uppercase;
-      
-
-    }
-
-    .img {
-      float: right;
-    }
-
-    /* a > button {
+/* a > button {
       font-family: 'Open Sans Condensed';
       font-weight: 600;
       flex-shrink: 1;
@@ -66,90 +54,86 @@ body {
       max-width: 320px;
       cursor: pointer;
       } */
-      a > button:hover {
-        
-          color: black;
-          background-color: #ffae00 ; 
-        
-      }
+a > button:hover {
+  color: black;
+  color: white;
+  background-color: var(--color-button-yellow);
+}
 
+.button {
+  background-color: var(--color-button-yellow);
+  font-family: var(--font-arial);
+  color: white;
 
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 1rem;
+  border: none;
+  text-align: center;
+  font-weight: 700;
+  padding: 1rem;
+  max-width: 450px;
+  min-width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
 
-      .button {
-        background-color: var(--color-primary-lighter);
-        color: white;
-    
-        display: inline-block;
-        border-radius: 2px;
-        font-size: 1rem;
-        border: none;
-        text-align: center;
-        font-weight: 700;
-        padding: 10px ;
-        max-width: 350px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-      }
-      
-      .button span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  padding: 0 1em;
+  text-transform: uppercase;
+}
 
-      text-transform: uppercase;
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
-      }
-      
-      .button span:after {
-        content: '\00bb';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.5s;
-      }
-      
-      .button:hover span {
-        padding-right: 25px;
-      }
-      
-      .button:hover span:after {
-        opacity: 1;
-        right: 0;
-      }
+.button:hover span {
+  padding: 0 1em 0 0;
+}
 
-    @media(max-width: 960px){
-      .gridService{
-        display: flex;
-        flex-direction: column;
-        padding: 0 50px 1rem;
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
-        }
-      .image{
-        max-width: 100%;
-        order: 2;
-      }
-      .button{
-        line-height: normal;
-      }
-      .image{
-        grid-row: 1/3;
-        clip-path: circle(38%) ;
-      }
-      .ServiceWrapper h1 {
-        text-align: center;
-      }
-
-    }
-    @media(max-width: 700px) {
-      .gridService {
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      grid-gap: 1rem;
-      grid-auto-flow: dense;
-      }
-      .ServiceWrapper h1 {
-        text-align: center;
-      }
-   }
+@media (max-width: 960px) {
+  .gridService {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px 1rem;
+  }
+  .image {
+    max-width: 100%;
+    order: 2;
+  }
+  .button {
+    line-height: normal;
+  }
+  .image {
+    grid-row: 1/3;
+    clip-path: circle(38%);
+  }
+  .ServiceWrapper h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  .gridService {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
+  }
+  .ServiceWrapper h1 {
+    text-align: center;
+  }
+}

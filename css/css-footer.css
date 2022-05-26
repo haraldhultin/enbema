@@ -1,6 +1,6 @@
 footer {
   background-color: var(--color-primary);
-
+  font-family: var(--font-arial);
   display: flex;
   justify-content: center; /* för att hålla allt centreat vid stora upplösningar */
   height: 60px;
@@ -71,11 +71,6 @@ footer a:hover {
   }
 }
 @media (max-width: 900px) {
-  /* Aimera? */
-  /* .footer-link-list { */
-  /* flex-wrap: wrap;  flytta upp?  */
-  /* width: 265px; <-- lös snyggare */
-  /* } */
   .footer-link-list {
     display: none;
   }

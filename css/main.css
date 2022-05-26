@@ -1,11 +1,30 @@
 :root {
-  --color-primary: var(--clr-candidate-20);
-  --color-primary-lighter: var(--clr-noxor-blue-lighter);
+  /* color */
+  --color-primary: #006089;
+  --color-primary-white: #ffffff;
+
+  --color-button-blue: #00aeef;
+  --color-button-blue-hover-dark: #0084bd;
+  
+  --color-button-yellow: #ffae00;
+
+
+  --color-border-yellow: #ffae00;
+  
+  --color-text-dark: black;
+  --color-text-light: white;
+
+  /* font */  
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-arial: Arial, 'Montserrat', sans-serif;
+  --font-open-sans-condensed: 'Open Sans Condensed', 'Montserrat', sans-serif;
+  
+  /* --color-primary-lighter: var(--clr-noxor-blue-lighter); */
+  
   --color-primary-light: var(--clr-noxor-blue-highlight);
 
-  --font-montserrat: 'Montserrat', sans-serif;
+  
 
-  --color-primary-text: var(black);
   /* --color-primary-light: var(--clr-candidate-25); */
   /* --color-primary-lighter: var(--clr-candidate-26); */
   --color-primary-lighter-hover: var(--clr-candidate-22);
@@ -16,7 +35,7 @@
   --clr-noxor-blue: hsl(217, 50%, 24%); /*  */
 
   --clr-noxor-blue-lighter: #00aeef; /*  */
-  --clr-noxor-blue-highlight: hsl(217, 50%, 34%); /*  */
+  --clr-noxor-blue-highlight: #2b4d82; /*  */
 
   --clr-candidate-1: #1f5c57; /* primary */
   --clr-candidate-2: #3f7671; /* monocromatic */
@@ -39,31 +58,20 @@
   --clr-candidate-19: #52648f; /*  */
   --clr-candidate-20: #006089; /* rätt nice */
   --clr-candidate-21: #2596be; /*  */
-  --clr-candidate-22: hsl(198, 100%, 37%); /*  */
+  --clr-candidate-22: #0084bd; /*  */
   --clr-candidate-23: #114400; /*  */
   --clr-candidate-24: hsla(99, 50%, 15%); /* industrigrön rätt nice  */
   --clr-candidate-25: hsl(99, 50%, 20%); /* industrigrön rätt nice  */
   --clr-candidate-26: hsl(99, 50%, 35%); /* industrigrön rätt nice  */
   --clr-candidate-27: hsl(99, 50%, 25%); /* industrigrön rätt nice  */
-
-  /* --ff-sans-serif: Arial, Helvetica, sans-serif;
-  --ff-serif: 'Times New Roman', Times, serif;
-  --fs-BIGGER: 47px;
-  --fs-big: 23px;
-  --fs-normal: 18px;
-  --fs-small: 14px;
-
-  --space-large: 2.5rem;
-  --space-medium: 1.25rem;
-  --space-small: 0.625rem; */
 }
 * {
   box-sizing: border-box;
 }
 body {
-  color: var(--color-primary-text);
+  color: var(--color-text-dark);
 
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-size: 16px;
   /* font-weight: 500; */
   margin: 0;
@@ -78,7 +86,7 @@ body {
     font-weight: 700;
     margin-bottom: 1rem;
     font-family: "Montserrat";
-    border-bottom: 3px solid #ffae00;
+    border-bottom: 3px solid var(--color-border-yellow);
     line-height: normal;
 
     text-transform: uppercase;

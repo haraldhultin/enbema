@@ -15,7 +15,7 @@
   height: 100%;
   margin: 0 auto;
   max-width: 1440px;
-  
+
   /* background-image: linear-gradient(
     rgba(255, 255, 255, 0.2),
     rgba(255, 255, 255, 0.2)
@@ -74,14 +74,14 @@
   font-weight: 700;
   margin-bottom: 1rem;
   font-family: 'Montserrat';
-  border-bottom: 3px solid #ffae00;
+  border-bottom: 3px solid var(--color-border-yellow);
 }
 
 .contact-us-text p {
   padding-right: 4rem;
 }
 .contact-us-text {
-  font-family: Arial;
+  font-family: var(--font-open-sans-condensed);
   font-size: 1.2rem;
   padding: 2rem;
 }
