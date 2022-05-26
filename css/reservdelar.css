@@ -56,14 +56,13 @@ body {
       } */
 a > button:hover {
   color: black;
-  color: white;
   background-color: var(--color-button-yellow);
 }
 
 .button {
-  background-color: var(--color-button-yellow);
+  background-color: hsl(201, 60%, 79%);
   font-family: var(--font-arial);
-  color: white;
+  color: black;
 
   display: inline-block;
   border-radius: 2px;
@@ -136,4 +135,8 @@ a > button:hover {
   .ServiceWrapper h1 {
     text-align: center;
   }
+  .button {
+    line-height: normal;
+  }
+
 }
