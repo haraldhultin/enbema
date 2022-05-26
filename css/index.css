@@ -412,8 +412,7 @@ span.spantext:before {
 .marqueReferencesDiv {
 
   max-width: 1200px;
-  height: 240px;
-  max-height: 200px;
+  height: auto;
   background-color: white;
   color: orange;
   overflow: hidden;
@@ -431,25 +430,23 @@ span.spantext:before {
 
 @keyframes scrolling {
   0% {
-    transform: translate(0%);
+    transform: translate(0vw);
   }
   100% {
-    transform: translate(-200%);
+    transform: translate(-180vw);
   }
 }
 
-.marqueReferencesContent li img {
+.marqueReferencesContent li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
-  height: 100px;
-
+  width: 20vw;
   flex-shrink: 0;
   font-size: 5rem;
   white-space: nowrap;
   z-index: 1;
-  margin-left: 1rem;
+  padding-left: 40px;
 }
 
 @media (max-width: 1200px) {
