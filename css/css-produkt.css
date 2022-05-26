@@ -106,7 +106,13 @@ h1 {
   padding-bottom: 0;
 }
 
+<<<<<<< Updated upstream
 a > button {
+=======
+
+
+.productButton {
+>>>>>>> Stashed changes
   font-family: 'Open Sans Condensed';
   font-weight: 300;
   flex-shrink: 1;
@@ -117,11 +123,27 @@ a > button {
   padding: 0.5rem;
   width: 23rem;
   cursor: pointer;
+<<<<<<< Updated upstream
 }
 a > button:hover {
   color: black;
   background-color: var(--color-button-yellow); /* TODO: välj värg */
 }
+=======
+  }
+  .productButton:hover {
+
+      color: black;
+      background-color: #ffae00 ; /* TODO: välj värg */
+
+  }
+
+
+
+@media ( min-width : 1025px) {
+
+
+>>>>>>> Stashed changes
 
 @media (min-width: 1025px) {
   .container-produkt {
@@ -183,6 +205,41 @@ a > button:hover {
     width: 100%;
     height: 100%;
   }
+<<<<<<< Updated upstream
+=======
+
+
+}
+
+@media(max-width: 670px) {
+
+
+
+
+
+#info-content p  {
+  padding-top: 20px;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+#info-content h1 {
+  text-align: center;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.container-produkt {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+
+>>>>>>> Stashed changes
 }
 
 @media (max-width: 670px) {
@@ -193,6 +250,7 @@ a > button:hover {
     align-items: center;
   }
 
+<<<<<<< Updated upstream
   #info-content h1 {
     text-align: center;
     padding-top: 20px;
@@ -205,6 +263,19 @@ a > button:hover {
     padding-bottom: 100px;
     justify-content: center;
     align-items: center;
+=======
+.productButton {
+  font-family: 'Open Sans Condensed';
+  font-weight: 300;
+  flex-shrink: 1;
+  background-color:  hsl(201, 68%, 79%);
+  border: none;
+  color: black;
+  font-size: 1.1rem;
+  max-width: 20rem;
+  cursor: pointer;
+  
+>>>>>>> Stashed changes
   }
 
   a > .buttonProducts {
