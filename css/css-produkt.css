@@ -8,18 +8,19 @@ body {
 .container-produkt {
   position: relative;
   height: 100%;
-  width: 90%;
+  max-width: 1440px;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
+  margin: 0 auto;
 }
-
 
 .container-produktSpjäll {
   position: relative;
   height: 100%;
-  width: 90%;
+  max-width: 1440px;
   padding-top: 50px;
   padding-bottom: 200px;
+  margin: 0 auto;
 }
 
 
@@ -163,6 +164,7 @@ a > button:hover {
     height: 100%;
     align-items: center;
     justify-content: center;
+    max-width: 1440px;
   }
 
   .images {
