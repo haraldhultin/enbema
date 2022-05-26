@@ -1,6 +1,7 @@
 :root {
   /* color */
   --color-primary: #006089;
+  --color-primary-light: hsl(198, 100%, 30%);
   --color-primary-hover-dark-blue: #0084bd;
   --color-primary-white: #ffffff;
 
@@ -22,7 +23,6 @@
   
   /* --color-primary-lighter: var(--clr-noxor-blue-lighter); */
   
-  --color-primary-light: var(--clr-noxor-blue-highlight);
 
   
 
