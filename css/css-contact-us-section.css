@@ -6,10 +6,11 @@
   color: white;
   font-family: var(--font-open-sans-condensed);
   font-family: var(--font-arial);
+  font-family: var(--font-montserrat);
   
   
   font-weight: 700;
-  padding: 4em 1rem;
+  padding: 10rem 1rem 6rem;
   line-height: normal;
   letter-spacing: 5px;
   
@@ -28,7 +29,7 @@
 .title-contact-us {
   text-align: center;
   font-size: 4.5rem;
-  margin: 1rem 0 2rem 0;
+  margin: 1.5rem 0 2.5rem 0;
 }
 
 
@@ -47,6 +48,7 @@
   background-color: var(--color-button-blue);
   font-family: var(--font-open-sans-condensed);
   font-family: var(--font-arial);
+  font-family: var(--font-montserrat);
 
 
   color: white;
