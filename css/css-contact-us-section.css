@@ -4,15 +4,15 @@
 
 
   color: white;
-  font-family: var(--font-open-sans-condensed);
   font-family: var(--font-arial);
   font-family: var(--font-montserrat);
+  font-family: var(--font-open-sans-condensed);
   
   
   font-weight: 700;
   padding: 10rem 1rem 6rem;
   line-height: normal;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   
   display: flex;
   flex-direction: column;
@@ -46,9 +46,9 @@
 
 .contact-us-button {
   background-color: var(--color-button-blue);
-  font-family: var(--font-open-sans-condensed);
   font-family: var(--font-arial);
   font-family: var(--font-montserrat);
+  font-family: var(--font-open-sans-condensed);
 
 
   color: white;
@@ -56,7 +56,7 @@
   display: inline-block;
   border-radius: 2px;
   font-size: 1.5rem;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   border: none;
   text-align: center;
   font-weight: 700;
