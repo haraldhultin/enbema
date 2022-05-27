@@ -603,19 +603,25 @@ span.spantext:before {
     animation: scrolling 30s linear infinite;
   }
   .spanWrapper {
-    height: 190px;
+    height: 170px;
   
   }
 
   
-@keyframes scrolling {
-  0% {
+ @keyframes scrolling {
+   0% {
     transform: translate(0vw);
-  }
-  100% {
+   }
+   100% {
     transform: translate(-720vw);
-  }
-}
-
-
+   }
+ }
 } 
+
+@media (max-width: 330px) {
+  .spanWrapper {
+    height: 210px;
+  
+  }
+
+}
