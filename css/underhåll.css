@@ -1,13 +1,13 @@
 body {
   /* text-align: center; */
   padding: 0px;
-  background: white;
+  font-family:  var(--font-montserrat )
 }
 
 .text1 {
   font-size: larger;
   /* font-weight: 530; */
-  font-family: Montserrat;
+  
 }
 
 .gridService {
@@ -35,7 +35,7 @@ body {
   padding-bottom: 10px;
   border-bottom: 3px solid var(--color-border-yellow);
   font-size: 2rem;
-  font-family: Montserrat;
+ 
   font-weight: bold;
   text-transform: uppercase;
 }

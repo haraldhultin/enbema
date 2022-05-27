@@ -42,10 +42,11 @@ h2 {
 
 
 }
+ .spanWrapper {
+  height: 85px;
 
-span.spantext {
-  font-size: larger;
 }
+
 
 span.spantext:before {
   content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.';
@@ -53,13 +54,25 @@ span.spantext:before {
 }
 
 @keyframes ani1 {
+
+  0% {font-size:118%; opacity:1; content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.'}
+  9% {font-size:116%; opacity:0;}
+  16% {font-size:116%; opacity:0;}
+  20% {font-size:118%; opacity:1; content: 'Vi utför leveranser av enstaka maskiner eller kompletta system för bulkgodshantering. Våra kunder är t.ex. energiverk, cellulosaindustrin, cementindustrin, kemisk industri.'}
+  57% {font-size:118%; opacity:1; content: 'Vi utför leveranser av enstaka maskiner eller kompletta system för bulkgodshantering. Våra kunder är t.ex. energiverk, cellulosaindustrin, cementindustrin, kemisk industri.'}
+  62% {font-size:116%; opacity:0;}
+  65% {font-size:116%; opacity:0;}
+  75%{font-size:118%;opacity:1; content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.'}
+  100% {font-size:118%; opacity:1; content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.'}
+/* 
+
   50% {
     content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.';
   }
 
   100% {
     content: 'Vi utför leveranser av enstaka maskiner eller kompletta system för bulkgodshantering. Våra kunder är t.ex. energiverk, cellulosaindustrin, cementindustrin, kemisk industri.';
-  }
+  } */
 }
 
 .card {
@@ -208,18 +221,7 @@ span.spantext:before {
   border-bottom: 3px solid var(--color-border-yellow);
   padding: 0 50px;
 }
-/* .cardwrapper1 {
-    max-width: 1440px;
-    margin: 0 auto;
 
-    min-height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-white);
-    padding: 0 50px;
-  
-    } */
 
 .slidetext2 h2 {
   padding-bottom: 10px;
@@ -450,6 +452,9 @@ span.spantext:before {
 }
 
 @media (min-width: 1600px) {
+
+  
+
   .marqueReferencesContent li {
   display: flex;
   justify-content: center;
@@ -478,6 +483,10 @@ span.spantext:before {
 }
 
 @media (max-width: 1200px) {
+  .spanWrapper {
+    height: 215px;
+   }
+
   .card1,
   .card2 {
     display: none;
@@ -493,6 +502,11 @@ span.spantext:before {
 }
 
 @media (max-width: 840px) {
+  .spanWrapper {
+    height: 80px;
+  
+  }
+  
   .slide-wrapper {
     flex-direction: column;
     min-height: 200px;
@@ -587,6 +601,10 @@ span.spantext:before {
     height: 100%;
     display: flex;
     animation: scrolling 30s linear infinite;
+  }
+  .spanWrapper {
+    height: 160px;
+  
   }
 
   
