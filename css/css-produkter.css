@@ -31,7 +31,7 @@ body {
   padding: 60px;
   height: 5rem;
   width: auto;
-  background-color: hsl(210, 14%, 97%);
+
  
 }
 
@@ -44,7 +44,6 @@ body {
   align-items: end;
   padding: 0px 230px 100px;
   text-align: center;
-  background-color: hsl(210, 14%, 97%);
   max-width: 1440px;
   margin: 0 auto;
 }
