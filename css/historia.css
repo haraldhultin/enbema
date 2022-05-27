@@ -81,11 +81,13 @@ body {
 }
 
 @media (max-width: 1200px) {
+
   .historyWrapper  {
    
     text-align: center;
   }
   .timelineHistory{
+    position: relative;
     height: auto;
     width: auto;
     background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(../res/img/historiaImage.jpg);
