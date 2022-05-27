@@ -146,7 +146,7 @@ ul li ul {
   pointer-events: none;
 }
 
-ul li:hover > ul,
+/* ul li:hover > ul,
 ul li ul:hover {
   visibility: visible;
   opacity: 1;
@@ -154,7 +154,7 @@ ul li ul:hover {
   border: none;
   padding: 0%;
   pointer-events: auto;
-}
+} */
 
 ul li ul li {
   clear: both;
