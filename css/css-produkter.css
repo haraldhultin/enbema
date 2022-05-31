@@ -1,95 +1,175 @@
 body {
-  text-align: center;
-  padding : 0px;
-  background: white;
-  font-family: Montserrat;
+
+  font-family:  var(--font-montserrat );
 }
+
+
 
 .produktTitle1 {
-
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 60px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: black;
-font-size: 26px;
-height: 200px;
-width: 100%;
-background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(../res/img/Enbema1444-307.jpg);
-
-
-
-background-size: 100%;
-}
-
-
-
-
-.grid-products { 
-  display: grid;
-  grid-template-columns:1fr 1fr;
-  grid-gap: 100px;
-  align-items: end;
-  padding: 100px 230px 100px;
-  background: white;
-  
-
-  }
-
-  /* .grid-products a{
-    text-decoration: none;
-    color: black;
-    
-  } */
-
-  
-.grid-products h1 {
-  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
   color: black;
-  padding-bottom: 20px;
-  border-bottom: 3px solid #ffae00;
-}
+  font-size: 16px;
+  height: 200px;
+  width: auto;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    url(../res/img/Enbema1444-307.jpg);
 
-.grid-productsWrapper {
-  background: white;
+  background-size: 100%;
+}
+.produktTitle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 16px;
+  padding: 60px;
+  height: 5rem;
+  width: auto;
+
  
 }
+
+
+
+.grid-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  align-items: end;
+  padding: 0px 230px 100px;
+  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.grid-products h2 {
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-border-yellow);
+  font-size: rem;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin: 1rem auto;
+
+  
+}
+
+
+
+
+.button-products {
+  background-color: var(--color-button-yellow);
+  background-color: hsl(201, 60%, 79%);
+  color: black;
+
+  display: inline-block;
+  border-radius: 2px;
+  border: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px;
+  width: 100%;
+  max-width: 50%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+
+.button-products span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-products span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-products:hover span {
+  padding-right: 25px;
+}
+
+.button-products:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 /* .grid-productsWrapper:hover {
   background-color: var( hsl(175, 50%, 44%)); /* TODO: välj värg */
-  /* cursor: pointer;
+/* cursor: pointer;
   box-shadow: 0 0 0.5rem 0 var(--color-primary-light);  */
 
-
 .grid > article {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
 .grid > article img {
   max-width: 100%;
-  background-color: var( hsl(175, 50%, 44%)); /* TODO: välj värg */
   cursor: pointer;
-  box-shadow: 0 0 0.5rem 0 var(--color-primary-light); 
+  box-shadow: 0 0 0.5rem 0 var(--color-primary-light);
 }
-
-
 
 a > button {
   font-family: 'Open Sans Condensed';
-  font-weight: 700;
+  font-weight: 600;
   flex-shrink: 1;
-  background-color:  hsl(201, 68%, 79%);
+  background-color: hsl(201, 68%, 79%);
   border: none;
   color: black;
   font-size: 1.5rem;
   padding: 0.5rem;
-  width: 300px;
+  width: 250px;
   cursor: pointer;
+}
+a > button:hover {
+  /* color: black; */
+  background-color: var(--color-button-yellow); /* TODO: välj värg */
+}
+
+@media (max-width: 900px) {
+  .grid-products {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
   }
-  a > button:hover {
-    
-      color: black;
-      background-color: #ffae00 ; /* TODO: välj värg */
-    
+  .produktTitle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: black;
+    font-size: 1rem;
+    height: 5rem;
+    width: 100%;
+    background-size: 100%;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      url(../res/img/Enbema1444-307.jpg);
   }
+
+  .produktTitle2 {
+    font-size: 0.8rem;
+  }
+}

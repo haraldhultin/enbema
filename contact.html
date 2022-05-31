@@ -44,8 +44,9 @@
 
             <ul class="header-link-list">
                 <li><a href="./index.html">HEM</a></li>
-                <li><a href="./produkter.html">PRODUKTER <img src="./res/icons/dropdown-menu-icon-12.jpg" alt="" width="15px"></a>
+                <li><a class="toggle-products-submenu" href"#">PRODUKTER <img class="dropdown-menu-icon" src="./res/icons/dropdown-menu-icon-12.jpg" alt="dropdown menu icon"></a>
                     <ul class="submenu">
+                        <li><a href="./produkter.html">VÅRA PRODUKTER</a></li>
                         <li><a href="./bandtransportörer.html">BANDTRANSPORTÖRER</a></li>
                         <li><a href="./skruvtransportörer.html">SKRUVTRANSPORTÖRER</a></li>
                         <li><a href="./elevatorer.html">ELEVATORER</a></li>
@@ -71,19 +72,16 @@
                     <img class="contact-icon" src="./res/icons/phone-call-svgrepo-com.svg"></img>
                     <span>019-21 90 60</span>
                     <img class="contact-icon" src="./res/icons/email-svgrepo-com.svg"></img>   
-                    <span>info@noxor.se</span>        
+                    <span>info@enbema.se</span>        
                     <img class="contact-icon" src="./res/icons/home-svgrepo-com.svg"></img>
-                    <span>Fabriksgatan 8 702 10 Örebro</span>
-                </div>
-                <div class="contact-us-text">
-                    <p>ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för
-                        bland annat bulkgods och pulver, med kunder främst inom tung processindustri. </p>
-                        <p>Postaddress:</p>
-                        <p>Box 279 SE-701 45 Örebro</p>
+                    <span>Besöksadress: Fabriksgatan 8 702 10 Örebro</span>
+                    <span>Postaddress: Box 279 SE-701 45 Örebro</span>
+                    <a href="mailto:info@enbema.se">
+                        <button class="contact-email-enbema-button"><span>SKICKA E-POST</span></button>
+                    </a>
                 </div>
             </div>
         </div>
-        
         <div class="contact-us-right-wrapper"></div>
     </section>  
 </div>
@@ -97,57 +95,53 @@
     <!-- länkar företag nexergroup cards -->
     <section class="nexer-group-cards">
         <div class="nexer-group-company-card-container">
-            <a class="card-company" href="https://noxorgroup.se/" target="_blank" rel="noopener">
-                <img src="https://noxor.se/wp-content/uploads/2020/05/noxor-group-log2-300x137.jpg" />
-                <h3 class="card-link-text">www.noxorgroup.se</h3>
-                <span class="card-company-text">
-                    FMAB is sub-contractor workshop that produces and delivers equipment and machines for all kinds of
-                    industry clients.
-                </span>
-            </a>
             <a class="card-company" href="https://noxor.se/" target="_blank" rel="noopener">
-                <img src="https://noxor.se/wp-content/uploads/2020/05/noxor3-300x137.jpg" />
+                <img src="./res/img/noxor3-300x137.jpg" />
                 <h3 class="card-link-text">www.noxor.se</h3>
                 <span class="card-company-text">
-                    Noxor is an engineering firm that constructs, delivers and assembles equipment and systems for the
-                    handling of mechanical materials and bulk goods for the industry.
-                </span>
-            </a>
-            <a class="card-company" href="https://fellingsbromekaniska.se/" target="_blank" rel="noopener">
-                <img src="https://noxor.se/wp-content/uploads/2020/05/fmab-log-300x137.jpg" />
-                <h3 class="card-link-text">www.fellingsbromekaniska.se</h3>
-                <span class="card-company-text">
-                    FMAB is sub-contractor workshop that produces and delivers equipment and machines for all kinds of
-                    industry clients.
+                    Noxor är en ingenjörsfirma som konstruerar,
+                    levererar och monterar utrustning och system för mekanisk materialhantering och bulkgods för industrin.
                 </span>
             </a>
             <a class="card-company" href="https://bameco.se/" target="_blank" rel="noopener">
-                <img src="https://noxor.se/wp-content/uploads/2020/05/bameco-logo-retin-300x137.jpg" />
+                <img src="./res/img/bameco-logo-retin-300x137.jpg"  />
                 <h3 class="card-link-text">www.bameco.se</h3>
                 <span class="card-company-text">
-                    Bameco is an engineering firm that - beyond mechanical machines - also constructs, delivers and
-                    installs equipment and systems for pneumatic material handling of bulk goods for heavy industry.
+                    Bameco är en ingenjörsfirma som förutom mekaniska maskiner även konstruerar, 
+                    levererar och monterar utrustning och system för pneumatisk materialhantering av bulkgods för tung industri.
                 </span>
             </a>
-            <!-- <a class="card-company" href="./index.html" target="_blank" rel="noopener">
-                    <img src="./ENBEMA-LOGO-300x137.bmp" />
-                    <h3 class="card-link-text">www.bameco.se</h3>
-                    <span class="card-company-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Omnis odio quo reiciendis quisquam provident nam fugiat facilis, error quae porro?
-                    </span>
-                </a> -->
+            <a class="card-company" href="./index.html" target="_blank" rel="noopener">
+                <img src="./res/img/Enbemalogo300-137.jpg" />
+                <h3 class="card-link-text">www.bameco.se</h3>
+                <span class="card-company-text">
+                    ENBEMA projekterar, konstruerar och levererar transportutrustning
+                    för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.
+                </span>
+            </a>
+            <a class="card-company" href="https://fellingsbromekaniska.se/" target="_blank" rel="noopener">
+                <img src="./res/img/FMABLOGO300-137.jpg" />
+                <h3 class="card-link-text">www.fellingsbromekaniska.se</h3>
+                <span class="card-company-text">
+                    FMAB är en legoverkstad som tillverkar och levererar utrustning och maskiner till olika typer av industrikunder.
+                </span>
+            </a>
         </div>
     </section>
 
     <!-- footer bottom -->
     <footer>
-        <nav class="nav-footer""">
-            <a target="_blank" href="http://noxor.se/">
+        <nav class="nav-footer">
+            <a target="_blank" href="https://noxorgroup.se/">
                 <img class="noxor-logo-footer" src="./res/img/Noxor-grey-logo-small-1.png" width="200" />
             </a>
 
-            <p class="copyright">© 2022 Noxor AB</p>
+        
+          
+            <a target="_blank" href="https://www.linkedin.com/company/noxor-ab/">
+                <img class="noxor-linkedIn-logo-footer-full" src="./res/icons/LinkedIn-Logo.wine.svg" width="200" />
+            </a>
+                 <p class="copyright">© 2022 Noxor AB</p>
             <ul class="footer-link-list">
                 <li><a class="footer-link" target="_blank" href="https://noxor.se/foretaget/"> Företaget </a></li>
                 <li><a class="footer-link" target="_blank" href="https://noxor.se/produkter/"> Produkter </a></li>

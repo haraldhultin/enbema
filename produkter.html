@@ -42,13 +42,14 @@
                 </div>
             </div>
         </a>
-
+        
         <img class="toggle-button" src="./res/icons/menu-svgrepo-com.svg"></img>
 
-        <ul class="header-link-list">
+ <ul class="header-link-list">
             <li><a href="./index.html">HEM</a></li>
-            <li><a href="./produkter.html">PRODUKTER <img src="./res/icons/dropdown-menu-icon-12.jpg" alt="" width="15px"></a>
+            <li><a class="toggle-products-submenu" href"#">PRODUKTER <img class="dropdown-menu-icon" src="./res/icons/dropdown-menu-icon-12.jpg" alt="dropdown menu icon"></a>
                 <ul class="submenu">
+                    <li><a href="./produkter.html">VÅRA PRODUKTER</a></li>
                     <li><a href="./bandtransportörer.html">BANDTRANSPORTÖRER</a></li>
                     <li><a href="./skruvtransportörer.html">SKRUVTRANSPORTÖRER</a></li>
                     <li><a href="./elevatorer.html">ELEVATORER</a></li>
@@ -66,7 +67,14 @@
 
   <div class="produktTitle1">
     <div class="produktTitle">
-      <h2>VÅRA PRODUKTER</h2>
+  
+    </div>
+  </div>
+
+  
+  <div class="produktTitle2">
+    <div class="produktTitle3">
+      <h1>VÅRA PRODUKTER</h1>
     </div>
   </div>
 
@@ -77,9 +85,9 @@
         <a href="./bandtransportörer.html">
         <img src="./res/img/Bandtransportör.jpg" alt="img" style= "height: 250px; width: 350;"></a>
         <div class="text">
-          <h1>Bandtransportörer</h1>
+          <h2>Bandtransportörer</h2>
           
-          <a href="./bandtransportörer.html"><button>Läs mer</button></a>
+          <a href="./bandtransportörer.html"><button class="button-products"><span>Läs mer</span></button class="button-products"></a>
         </div>
       </article>
     </div>
@@ -88,31 +96,31 @@
         <a href="./skruvtransportörer.html">
         <img src="./res/img/skruvtransport1.jpg" alt="img" style="height: 250px; width: 350;"></a>
         <div class="text">
-          <h1>Skruvtransportörer</h1>
+          <h2>Skruvtransportörer</h2>
          
-          <a href="./skruvtransportörer.html"> <button>Läs mer</button></a>
+          <a href="./skruvtransportörer.html"> <button class="button-products"><span>Läs mer</span></button class="button-products"></a>
         </div>
       </article>
     </div>
     <div class="grid-productsWrapper">
       <article>
         <a href="./elevatorer.html">
-        <img src="./res/img/elevator393-482.jpg" alt="img" style="height: 250px; width: 350;"></a>
+        <img src="./res/img/Enbema_elevatortopp450.jpg" alt="img" style="height: 250px; width: 350;"></a>
         <div class="text">
-          <h1>Elevatorer</h1>
+          <h2>Elevatorer</h2>
         
-          <a href="./elevatorer.html"> <button>Läs mer</button></a>
+          <a href="./elevatorer.html"> <button class="button-products"><span>Läs mer</span></button class="button-products"></a>
         </div>
       </article>
     </div>
     <div class="grid-productsWrapper">
       <article>
         <a href="./spjäll.html">
-        <img src="./res/img/spjäll280.jpg" alt="img" style="height: 250px; width: 350;"></a>
+        <img src="./res/img/spjäll449.jpg" alt="img" style="height: 250px; width: 350;"></a>
         <div class="text">
-          <h1>Spjäll</h1>
+          <h2>Spjäll</h2>
          
-          <a href="./spjäll.html"><button>Läs mer</button></a>
+          <a href="./spjäll.html"><button class="button-products"><span>Läs mer</span></button class="button-products"></a>
         </div>
       </article>
     </div>
@@ -122,63 +130,62 @@
 
 
 
-
-
-  <section class="contact-us-container">
-    <div class="question-contact-us">HAR DU NÅGRA FUNDERINGAR?</div>
-    <p class="title-contact-us">KONTAKTA OSS</p>
-    <a href="https://noxor.se/kontakt/">
-      <button class="contact-us-button">KONTAKT</button>
-    </a>
+  
+    <!-- kontakta oss -->
+    <section class="contact-us-container">
+      <div class="question-contact-us">HAR DU NÅGRA FUNDERINGAR?</div>
+      <div class="title-contact-us">KONTAKTA OSS</div>
+      <a class="button-link" href="./contact.html">
+          <button class="contact-us-button"><span>KONTAKT</span></button>
+      </a>
   </section>
 
 
-  <!-- länkar företag nexergroup cards -->
-  <section class="nexer-group-cards">
+<!-- länkar företag nexergroup cards -->
+<section class="nexer-group-cards">
     <div class="nexer-group-company-card-container">
-      <div class="card-company">
-        <a href="https://noxorgroup.se/" target="_blank" rel="noopener">
-          <img src="https://noxor.se/wp-content/uploads/2020/05/noxor-group-log2-300x137.jpg" />
-          <h3 class="card-link-text">www.noxorgroup.se</h3>
+        <a class="card-company" href="https://noxor.se/" target="_blank" rel="noopener">
+            <img src="./res/img/noxor3-300x137.jpg" />
+            <h3 class="card-link-text">www.noxor.se</h3>
+            <span class="card-company-text">
+                Noxor är en ingenjörsfirma som konstruerar,
+                levererar och monterar utrustning och system för mekanisk materialhantering och bulkgods för industrin.
+            </span>
         </a>
-        FMAB is sub-contractor workshop that produces and delivers equipment and
-        machines for all kinds of industry clients.
-      </div>
-      <div class="card-company">
-        <a href="https://noxor.se/" target="_blank" rel="noopener">
-          <img src="https://noxor.se/wp-content/uploads/2020/05/noxor3-300x137.jpg" />
-          <h3 class="card-link-text">www.noxor.se</h3>
+        <a class="card-company" href="https://bameco.se/" target="_blank" rel="noopener">
+            <img src="./res/img/bameco-logo-retin-300x137.jpg"  />
+            <h3 class="card-link-text">www.bameco.se</h3>
+            <span class="card-company-text">
+                Bameco är en ingenjörsfirma som förutom mekaniska maskiner även konstruerar, 
+                levererar och monterar utrustning och system för pneumatisk materialhantering av bulkgods för tung industri.
+            </span>
         </a>
-        Noxor is an engineering firm that constructs, delivers and assembles equipment
-        and systems for the handling of mechanical materials and bulk goods for the
-        industry.
-      </div>
-      <div class="card-company">
-        <a href="https://fellingsbromekaniska.se/" target="_blank" rel="noopener">
-          <img src="https://noxor.se/wp-content/uploads/2020/05/fmab-log-300x137.jpg" />
-          <h3 class="card-link-text">www.fellingsbromekaniska.se</h3>
+        <a class="card-company" href="./index.html" target="_blank" rel="noopener">
+            <img src="./res/img/Enbemalogo300-137.jpg" />
+            <h3 class="card-link-text">www.bameco.se</h3>
+            <span class="card-company-text">
+                ENBEMA projekterar, konstruerar och levererar transportutrustning
+                för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.
+            </span>
         </a>
-        FMAB is sub-contractor workshop that produces and delivers equipment and
-        machines for all kinds of industry clients.
-      </div>
-      <div class="card-company">
-        <a href="https://bameco.se/" target="_blank" rel="noopener">
-          <img src="https://noxor.se/wp-content/uploads/2020/05/bameco-logo-retin-300x137.jpg" />
-          <h3 class="card-link-text">www.bameco.se</h3>
+        <a class="card-company" href="https://fellingsbromekaniska.se/" target="_blank" rel="noopener">
+            <img src="./res/img/FMABLOGO300-137.jpg" />
+            <h3 class="card-link-text">www.fellingsbromekaniska.se</h3>
+            <span class="card-company-text">
+                FMAB är en legoverkstad som tillverkar och levererar utrustning och maskiner till olika typer av industrikunder.
+            </span>
         </a>
-        Bameco is an engineering firm that - beyond mechanical machines - also
-        constructs, delivers and installs equipment and systems for pneumatic material
-        handling of bulk goods for heavy industry.
-      </div>
     </div>
-  </section>
-
+</section>
     <!-- footer bottom -->
     <footer>
-      <nav class="nav-footer""">
-          <a target="_blank" href="http://noxor.se/">
+      <nav class="nav-footer">
+          <a target="_blank" href="https://noxorgroup.se/">
               <img class="noxor-logo-footer" src="./res/img/Noxor-grey-logo-small-1.png" width="200" />
           </a>
+          <a target="_blank" href="https://www.linkedin.com/company/noxor-ab/">
+            <img class="noxor-linkedIn-logo-footer-full" src="./res/icons/LinkedIn-Logo.wine.svg" width="200" />
+        </a>
 
           <p class="copyright">© 2022 Noxor AB</p>
           <ul class="footer-link-list">

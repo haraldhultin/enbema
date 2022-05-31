@@ -1,25 +1,32 @@
-
 html,
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Montserrat;
-  line-height: 1.6rem;
-  min-width: 340px;
-
+  font-family:  var(--font-montserrat );
 }
 
 .container-produkt {
   position: relative;
   height: 100%;
-  
-  padding: 100px;
-  
+  max-width: 1440px;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  margin: 0 auto;
+}
+
+.container-produktSpjäll {
+  position: relative;
+  height: 100%;
+  max-width: 1440px;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  margin: 0 auto;
 }
 
 
 .card {
+  padding-top: 0;
   background-color: white;
   display: flex;
   align-items: center;
@@ -28,76 +35,74 @@ body {
   position: relative;
 }
 
-
 .images h2 {
-margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
-.infos h1 {
-  display: none;
+h1 {
+  color: black;
+  padding-bottom: 20px;
+  border-bottom: 3px solid var(--color-border-yellow);
 }
 .imgs {
   cursor: pointer;
 }
 
-
-
-
 .infos #more-infos {
   display: flex;
   justify-content: flex-start;
- 
+
   color: rgb(17, 7, 7);
 }
-
-#more-infos h5 {
-  padding: 8px 20px 0px;
-  
-}
-
-
-
 
 .infos {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 400px;
-  margin-top: 30px;
   width: 90%;
 }
 
-.infos a {
-  color: black;
-}
 
 .choose {
   cursor: pointer;
 }
 
-
-
-
 #info-content {
   font-size: 15px;
-  height: 270px;
- 
+  height: 440px;
+}
+
+#info-contentSpjäll {
+  height: 440px;
+  font-size: 15px;
+}
+
+#info-content p {
+  font-family: var(  --font-arial);
+  padding: 3px;
+  height: 200px;
+  width: 570px;
+  overflow-wrap: normal;
+  font-size: 1.1rem;
+  font-weight: 540;
 }
 
 
-#info-content p {
+#info-contentSpjäll p {
+  font-family: var(  --font-arial);
   padding: 3px;
-  font-size: 15px;
-  height: 200px;
+  height: 300px;
   width: 570px;
-  overflow-wrap:normal;
+  overflow-wrap: normal;
+  font-size: 1.1rem;
+  font-weight: 540;
 }
 
 .slider {
   height: 80%;
   display: flex;
   align-items: center;
-
 }
 
 .slider img {
@@ -115,7 +120,6 @@ margin-bottom: 25px;
 }
 
 .img-slider div {
-  width: 20%;
   height: 100%;
 }
 
@@ -126,50 +130,44 @@ margin-bottom: 25px;
 .Download {
   display: flex;
   padding-bottom: 0;
-
 }
-.DownloadHover {
+
+a > button {
   font-family: 'Open Sans Condensed';
-  font-weight: 350;
+  font-weight: 300;
+  flex-shrink: 1;
+  background-color: hsl(201, 68%, 79%);
   border: none;
-  color: white;
-  font-size: 1.5rem;
-  padding: 0.8em 1em 0.8em 1em;
-  border-radius: 5px;
+  color: black;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  width: 23rem;
   cursor: pointer;
-  text-align: left;
+}
+a > button:hover {
+  color: black;
+  background-color: var(--color-button-yellow); /* TODO: välj värg */
 }
 
-.DownloadHover:hover {
-
-  color: hsl(175, 50%, 34%);
-}
-
-
-
-@media ( min-width : 1025px) {
-
- 
-
+@media (min-width: 1025px) {
   .container-produkt {
-      background-color:white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .card {
-      flex-direction: row;
-      height: 100%;
-      align-items: center;
-      justify-content: center;
-
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
   }
 
   .images {
-      width: 50%;
-      height: 100%;
+    width: 50%;
+    height: 100%;
   }
 
   .images h2 {
@@ -177,51 +175,116 @@ margin-bottom: 25px;
   }
 
   .infos {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin-top: 0px;
-      height: 80%;
-      width: 50%;
-      font-size: 20px;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
-      
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0px;
+    height: 80%;
+    width: 50%;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
   }
 
   .infos h1 {
-      display: block;
-      color: black;
-      margin-left: auto;
-      margin-right: auto;
-  }
+    display: block;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
     
-  .img-slider {
-      width: 50%;
   }
+
+  .img-slider {
+    width: 50%;
+  }
+}
+
+@media (min-width: 670px) {
+  .container-produkt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 670px) {
+ 
+  #info-content {
+    height: 26rem;
+  }
+
+
+  #info-content p {
+    padding-top: 20px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #info-content h1 {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  
+
+  #info-contentSpjäll {
+    height: 42rem;
+  }
+
+  #info-contentSpjäll p {
+    padding-top: 20px;
+    height: 50rem;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #info-contentSpjäll h1 {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .container-produkt {
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 7rem;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+.container-produktSpjäll {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
 
 }
   
 
-
-
-@media (min-width : 670px) {
-
-  .container-produkt {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
+  a > .buttonProducts {
+    font-family: 'Open Sans Condensed';
+    font-weight: 300;
+    flex-shrink: 1;
+    background-color: hsl(201, 68%, 79%);
+    border: none;
+    color: black;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    width: 100vw;
+    cursor: pointer;
   }
-
-
-  .card {
-      width: 100%;
-      height: 100%;
-  }
-
 
 }
-
-

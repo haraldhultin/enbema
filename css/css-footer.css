@@ -1,65 +1,76 @@
 footer {
-    background-color: var(--color-primary);
-  
-    display: flex;
-    justify-content: center; /* för att hålla allt centreat vid stora upplösningar */
-    height: 60px;
-    min-height: 150px;
-    /* border-top: 2px solid hsl(175, 50%, 74%);  */
-    border-top: 2px solid var(--color-primary-light); /* TODO: välj värg */
-  }
-  
-  .nav-footer {
-    color: white;
-    display: flex;
-    flex-grow: 1;
-    padding: 50px;
-    margin: 1rem;
-    align-items: center;
-    min-width: 340px;
-    max-width: 1440px;
-  }
-  
-  /* make space between elements in footer */
-  .nav-footer * {
-    margin: 0.5rem;
-  }
-  
-  .nav-footer a {
-    /* redundant? */
-  
-    text-decoration: none;
-    color: white;
-  }
-  footer a:hover {
-    color: hsl(0, 0%, 80%); /* TODO: välj värg */
-  }
-  .footer-link-list {
-    display: flex;
-    margin-left: auto;
-    padding: 0;
-    list-style: none;
-  }
-  .footer-link {
-    color: white;
-  }
+  background-color: var(--color-primary);
+  font-family: var(--font-arial);
+  display: flex;
+  justify-content: center; /* för att hålla allt centreat vid stora upplösningar */
+  height: 60px;
+  min-height: 150px;
+  /* border-top: 2px solid hsl(175, 50%, 74%);  */
+  border-top: 2px solid var(--color-primary-light); /* TODO: välj värg */
+}
 
+.nav-footer {
+  color: white;
+  display: flex;
+  flex-grow: 1;
+  padding: 50px;
+  margin: 1rem;
+  align-items: center;
+  min-width: 320px;
+  max-width: 1440px;
+}
+
+/* make space between elements in footer */
+.nav-footer * {
+  margin: 0.5rem;
+}
+
+.nav-footer a {
+  /* redundant? */
+
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: hsl(0, 0%, 80%); /* TODO: välj värg */
+}
+.footer-link-list {
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+}
+.footer-link {
+  color: white;
+}
+
+.copyright {
+  font-size: 0.7rem;
+}
+
+.noxor-linkedIn-logo-footer {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  filter: brightness(0) invert(1);
+}
+
+.noxor-linkedIn-logo-footer-full {
+  height: 75px;
+  width: auto;
+  margin-right: 0.5rem;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 1200px) {
   .copyright {
-    font-size: 0.7rem;
+    display: none;
   }
-
-
-  @media (max-width: 1200px) {
-    .copyright {
-      display: none;
-    }
-  @media (max-width: 900px) {
-
-  /* Aimera? */
-  /* .footer-link-list { */
-  /* flex-wrap: wrap;  flytta upp?  */
-  /* width: 265px; <-- lös snyggare */
-  /* } */
+  .noxor-linkedIn-logo-footer-full {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
   .footer-link-list {
     display: none;
   }
