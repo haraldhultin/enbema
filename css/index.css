@@ -38,33 +38,69 @@ h2 {
   align-items: center;
   width: 40%;
   font-family: Montserrat, sans-serif;
-
-
-
 }
- .spanWrapper {
+.spanWrapper {
   height: 85px;
-
 }
-
 
 span.spantext:before {
-  content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.';
+  content: '';
   animation: ani1 infinite 30s;
 }
 
 @keyframes ani1 {
+  0% {
+    font-size: 116%;
+    opacity: 0;
+    content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.';
+  }
+  7% {
+    font-size: 118%;
+    opacity: 1;
+    content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.';
+  }
+  39% {
+    font-size: 118%;
+    opacity: 1;
+    content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.';
+  }
+  43% {
+    font-size: 118%;
+    opacity: 1;
+    content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.';
+  }
+  49% {
+    font-size: 116%;
+    opacity: 0;
+    content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.';
+  }
 
-  0% {font-size:118%; opacity:1; content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.'}
-  9% {font-size:116%; opacity:0;}
-  16% {font-size:116%; opacity:0;}
-  20% {font-size:118%; opacity:1; content: 'Vi utför leveranser av enstaka maskiner eller kompletta system för bulkgodshantering. Våra kunder är t.ex. energiverk, cellulosaindustrin, cementindustrin, kemisk industri.'}
-  57% {font-size:118%; opacity:1; content: 'Vi utför leveranser av enstaka maskiner eller kompletta system för bulkgodshantering. Våra kunder är t.ex. energiverk, cellulosaindustrin, cementindustrin, kemisk industri.'}
-  62% {font-size:116%; opacity:0;}
-  65% {font-size:116%; opacity:0;}
-  75%{font-size:118%;opacity:1; content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.'}
-  100% {font-size:118%; opacity:1; content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.'}
-/* 
+  50% {
+    font-size: 116%;
+    opacity: 0;
+    content: 'Vi utför leveranser av enstaka maskiner eller kompletta system för bulkgodshantering. Våra kunder är t.ex. energiverk, cellulosaindustrin, cementindustrin, kemisk industri.';
+  }
+  57% {
+    font-size: 118%;
+    opacity: 1;
+    content: 'Vi utför leveranser av enstaka maskiner eller kompletta system för bulkgodshantering. Våra kunder är t.ex. energiverk, cellulosaindustrin, cementindustrin, kemisk industri.';
+  }
+  89% {
+    font-size: 118%;
+    opacity: 1;
+    content: 'Vi utför leveranser av enstaka maskiner eller kompletta system för bulkgodshantering. Våra kunder är t.ex. energiverk, cellulosaindustrin, cementindustrin, kemisk industri.';
+  }
+  93% {
+    font-size: 118%;
+    opacity: 1;
+    content: 'Vi utför leveranser av enstaka maskiner eller kompletta system för bulkgodshantering. Våra kunder är t.ex. energiverk, cellulosaindustrin, cementindustrin, kemisk industri.';
+  }
+  100% {
+    font-size: 116%;
+    opacity: 0;
+    content: 'Vi utför leveranser av enstaka maskiner eller kompletta system för bulkgodshantering. Våra kunder är t.ex. energiverk, cellulosaindustrin, cementindustrin, kemisk industri.';
+  }
+  /*
 
   50% {
     content: 'ENBEMA Teknisk Materialhantering AB projekterar, konstruerar och levererar transportutrustning för bland annat bulkgods och pulver, med kunder främst inom tung processindustri.';
@@ -222,7 +258,6 @@ span.spantext:before {
   padding: 0 50px;
 }
 
-
 .slidetext2 h2 {
   padding-bottom: 10px;
   text-align: center;
@@ -256,8 +291,6 @@ span.spantext:before {
   background-image: url('../res/img/komponenter.png');
   background-size: cover;
 }
-
-
 
 .button1 {
   background-color: var(--color-button-yellow);
@@ -412,7 +445,6 @@ span.spantext:before {
 }
 
 .marqueReferencesDiv {
-
   max-width: 1200px;
   height: auto;
   background-color: white;
@@ -420,7 +452,6 @@ span.spantext:before {
   overflow: hidden;
   clear: both;
   padding: 0 50px;
-  
 }
 
 .marqueReferencesContent {
@@ -452,40 +483,37 @@ span.spantext:before {
 }
 
 @media (min-width: 1600px) {
-
-  
-
   .marqueReferencesContent li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 15vw;
-  flex-shrink: 0;
-  font-size: 5rem;
-  white-space: nowrap;
-  z-index: 1;
-  padding-left: 40px;
-}
-@keyframes scrolling {
-  0% {
-    transform: translate(0vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    flex-shrink: 0;
+    font-size: 5rem;
+    white-space: nowrap;
+    z-index: 1;
+    padding-left: 40px;
   }
-  100% {
-    transform: translate(-135vw);
+  @keyframes scrolling {
+    0% {
+      transform: translate(0vw);
+    }
+    100% {
+      transform: translate(-135vw);
+    }
   }
-}
-.marqueReferencesContent {
-  list-style: none;
-  height: 100%;
-  display: flex;
-  animation: scrolling 25s linear infinite;
-}
+  .marqueReferencesContent {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling 25s linear infinite;
+  }
 }
 
 @media (max-width: 1200px) {
   .spanWrapper {
     height: 215px;
-   }
+  }
 
   .card1,
   .card2 {
@@ -504,9 +532,8 @@ span.spantext:before {
 @media (max-width: 840px) {
   .spanWrapper {
     height: 80px;
-  
   }
-  
+
   .slide-wrapper {
     flex-direction: column;
     min-height: 200px;
@@ -560,15 +587,15 @@ span.spantext:before {
     z-index: 1;
     padding-left: 10px;
   }
-    
-@keyframes scrolling {
-  0% {
-    transform: translate(0vw);
+
+  @keyframes scrolling {
+    0% {
+      transform: translate(0vw);
+    }
+    100% {
+      transform: translate(-580vw);
+    }
   }
-  100% {
-    transform: translate(-580vw);
-  }
-}
 
   .marqueReferencesContent {
     list-style: none;
@@ -576,16 +603,14 @@ span.spantext:before {
     display: flex;
     animation: scrolling 20s linear infinite;
   }
-
 }
 
 @media (max-width: 420px) {
-
   .referenceTitle {
     padding: 0px;
   }
 
-  .marqueReferencesContent li{
+  .marqueReferencesContent li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -604,24 +629,20 @@ span.spantext:before {
   }
   .spanWrapper {
     height: 170px;
-  
   }
 
-  
- @keyframes scrolling {
-   0% {
-    transform: translate(0vw);
-   }
-   100% {
-    transform: translate(-720vw);
-   }
- }
-} 
+  @keyframes scrolling {
+    0% {
+      transform: translate(0vw);
+    }
+    100% {
+      transform: translate(-720vw);
+    }
+  }
+}
 
 @media (max-width: 330px) {
   .spanWrapper {
     height: 210px;
-  
   }
-
 }
