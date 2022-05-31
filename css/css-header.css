@@ -34,8 +34,7 @@ body {
 }
 
 .header-enbema-logo {
-  max-height: 130px;
-  max-width: auto;
+  height: 4em;
 }
 
 .header-link-list {
